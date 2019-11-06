@@ -19,8 +19,8 @@
     padding-top:40px; 
     color: white;
 }
-.navbar-toggler-icon{
-color:white;
+.navbar-toggler {
+    border-color: rgb(255,102,203);
 }
 nav {
     background-color:#164e82;
