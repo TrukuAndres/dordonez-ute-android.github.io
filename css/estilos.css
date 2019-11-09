@@ -1,3 +1,8 @@
+/*Colores UTE
+#419763
+#31737E
+*/
+
 .display-4{
     text-align: center;
     padding-top:40px;
@@ -43,4 +48,24 @@ nav {
 p{
     text-align: justify;
     font-family: 'Quicksand', sans-serif;
+}
+
+.display-1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #13436e;
+}
+
+.dropdown-item:hover{
+color: white;
+background-color:#164e82;
+}
+
+
+.iu4{
+    width: 1100px;
+}
+
+.iu5{
+    width: 900px;
 }
