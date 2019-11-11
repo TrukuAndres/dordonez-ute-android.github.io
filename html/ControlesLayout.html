@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <title>Desarrollo de Sistemas II - Interfaz de usuario</title>
+  </head>
+  <body>
+      
+          <header>
+              <div class="hero">
+                  <div class="container">
+                        <div class="display-3">
+                                CONTROLES Y LAYOUT
+                        </div>
+                  </div>  
+              </div>
+                  
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                            <a class="navbar-brand" href="#">Menú</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Parcial I
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="entorno.html">Entorno</a>
+                                    <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
+                                    <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
+                                    <a class="dropdown-item" href="vistaAdaptadores.html">Vistas con adaptadores</a>
+                                    <a class="dropdown-item" href="menus.html">Menús</a>
+                                  </div>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Parcial II
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Tema 1</a>
+                                          <a class="dropdown-item" href="#">Tema 2</a>
+                                          <a class="dropdown-item" href="#">Tema 3</a>
+                                        </div>
+                                      </li>
+    
+                                      <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Parcial III
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item" href="#">Tema 1</a>
+                                              <a class="dropdown-item" href="#">Tema 2</a>
+                                              <a class="dropdown-item" href="#">Tema 3</a>
+                                            </div>
+                                          </li>
+                              </ul>
+                            </div>
+                    </div>
+                        
+                      </nav>
+          </header> 
+
+
+      <section class="container">
+              <div class="display-4">¿Qué son los controles?</div>
+              <hr>
+              <p>Los controles de entrada son los componentes interactivos de la interfaz de usuario de la aplicación, Android ofrece una gran variedad de controles como botones, campos de texto,barras de búsqueda, etc.</p>
+             
+
+              <p><h3><font color="#5499C7 ">¿Qué tipos de controles existen en el desarrollo Android?</font></h3></p>
+               <p> Los siguientes son los controles básicos.</p>
+
+              <ul>
+                  <li><a href="#bh">Edith Text</a></li>
+                  <li><a href="#bn">Button</a></li>
+                  <li><a href="#ve">TextView</a></li>
+              </ul>
+              <img src="../img/Primer_parcial/ControlesL/cl5.png" alt="Controles">
+              <br> <br>
+
+              <div class="display-1" id="bh">Edith Text</div>
+              <hr>
+              <p>El control EditText es el componente de edición de texto que proporciona la plataforma Android. Permite la introducción y edición de texto por parte del usuario.</p>
+              
+	      
+	      <img src="../img/Primer_parcial/ControlesL/cl6.png" alt="Edith Text">
+		<br>
+         	
+              <div class="display-1" id="bn">Button</div>
+              <hr>
+              <p>Un control de tipo Button es el botón más básico que podemos utilizar y normalmente contiene un simple texto.</p>
+              <img src="../img/Primer_parcial/ControlesL/cl7.png" alt=" Button">
+              <br> <br>
+
+              <div class="display-1" id="ve">Text View</div>
+              <hr>
+              <p>El control TextView es otro de los clásicos en la programación de GUIs, las etiquetas de texto, y se utiliza para mostrar un determinado texto al usuario. Al igual que en el caso de los botones, el texto del control se establece mediante la propiedad android:text.
+Los TextView son propiedades de texto que nos van a permitir personalizar nuestros layouts. Como vemos en la siguiente imagen, podremos escribir etiquetas como «Título» o también dejar un campo vacío para luego completar con unos determinados datos, y así reutilizar el layout para ser reemplazado con una determinada información a medida que avanzamos de posición:
+</p>
+             
+              <br> <br>
+
+          </section
+
+
+
+          <section class="container">
+              <div class="display-4">¿Qué es un layout?</div>
+              <hr>
+              <p>Un layout es un objeto que representa el espacio contenedor de todas las vistas (Views) dentro de la actividad. En él se define la estructura y el orden de los elementos para que el usuario pueda interactuar con la interfaz. Lógicamente se representan con subclases Java que heredan de la clase ViewGroup.</p>
+              
+              <p><h3><font color="#5499C7 ">¿Qué tipos de layouts existen en el desarrollo Android?</font></h3></p>
+              <p>Existen varios y su uso depende de la necesidad de cada persona.Los siguientes son los más populares y fáciles de usar</p>
+              <ul>
+                  <li><a href="#bh">LinearLayout</a></li>
+                  <li><a href="#bn">FrameLayout</a></li>
+                  <li><a href="#ve">RelativeLayout</a></li>
+              </ul>
+              <img src="../img/Primer_parcial/ControlesL/cl1.jpg" alt="LinearLayout">
+              <br> <br>
+
+              <div class="display-1" id="bh">LinearLayout</div>
+              <hr>
+              <p>El Linear Layout es el más sencillo. Dentro de él los elementos son ubicados en forma linear a través de columnas o filas. Posee un atributo que permite modificar su orientación, ya sea para presentar los elementos horizontal o verticalmente.</p>
+              
+	      <p>Los elementos contenidos en un LinearLayout pueden establecer sus propiedades android:layout_width y android:layout_height para determinar sus dimensiones dentro del layout.</p>
+	      <img src="../img/Primer_parcial/ControlesL/cl2.png" alt="LinearLayout">
+		<br>
+         	
+              <div class="display-1" id="bn">FrameLayout</div>
+              <hr>
+              <p>Un FrameLayout coloca todos sus controles hijos alineados con su esquina superior izquierda, de forma que cada control quedará oculto por el control siguiente.</p>
+              <img src="../img/Primer_parcial/ControlesL/cl3.png" alt=" FrameLayout">
+              <br> <br>
+
+              <div class="display-1" id="ve">RelativeLayout</div>
+              <hr>
+              <p>Este es el layout más recomendado a usar, ya que los componentes dentro de él se pueden organizar de forma relativa entre sí.</p>
+              <img src="../img/Primer_parcial/ControlesL/cl4.png" alt="RelativeLayout" class="iu4">
+              <br> <br>
+
+          </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
