@@ -82,10 +82,10 @@
     <ul>
       <li><a href="#bh">¿Qué es un adaptador?</a></li>
       <li><a href="#bn">¿Cómo funciona?</a></li>
-      <li><a href="#ve">Descripcion General de Proyectos Modulos</a></li>
-      <li><a href="#bvh">Archivos de Proyecto</a></li>
-      <li><a href="#vh">Vista de Proyectos de Android</a></li>
-      <li><a href="#be">Configuración de la estructura de Proyecto</a></li>
+      <li><a href="#ve">Array Adapter</a></li>
+      <li><a href="#bvh">List View</a></li>
+      <li><a href="#vh">Grid View</a></li>
+      <li><a href="#be">x</a></li>
     </ul>
     <img src="#" alt="ImgIntro">
     <br> <br>
@@ -108,74 +108,24 @@
     <img src="#" alt="tema3" class="iu4">
     <br> <br>
 
-    <div class="display-1" id="bvh">Archivos de Proyecto</div>
+    <div class="display-1" id="bh">TEMA4</div>
     <hr>
-    <p>De forma predeterminada, Android Studio muestra los archivos de tu proyecto en la vista Android. Esta vista no refleja la jerarquía real de los archivos en el disco, pero se organiza en módulos y tipos de archivos para simplificar la navegación entre los principales archivos fuente de tu proyecto, con lo cual se ocultan determinados archivos o directorios que no se usan con frecuencia.</p>
-    <img src="../img/Primer_parcial/img_entorno/img1.png" alt="Archivos de Proyecto" width="344" height="496">
-    <br>
-    <p>Dentro de cada módulo de app para Android, los archivos se muestran en los siguientes grupos:</p>
-    <p><strong>Manifest</strong></p>
-    <p>Contiene el archivo AndroidManifest.xml.</p>
-    <p><strong>Java</strong></p>
-    <p>Contiene los archivos Java de código fuente separados por nombres de paquetes, incluido el código de prueba JUnit.</p>
-    <p><strong>res</strong></p>
-    <p>Contiene todos los recursos sin código, como diseños XML, strings de IU y también imágenes de mapa de bits, divididos en subdirectorios pertinentes.</p>
-    <div class="display-1" id="vh">Vista de Proyectos de Android</div>
+    <p>XXXXXXXXXXXX</p>
+    <img src="#" alt="Tema1">
+    <br> <br>
+
+    <div class="display-1" id="bn">TEMA5</div>
     <hr>
-    <table width="1000" border="0" align="center">
-      <tr>
-        <td height="750"><p>Para ver la estructura de archivos real del proyecto, incluidos todos los archivos ocultos de la vista de Android, selecciona Proyecto en el menú desplegable de la parte superior de la ventana Proyecto.</p>
-          <p>Cuando seleccionas la vista Proyecto, puedes ver más archivos y directorios. Los más importantes son los siguientes:</p>
-          <p><strong>module-name/</strong></p>
-          <blockquote>
-            <p><strong>build/</strong></p>
-            <p>Contiene resultados de compilación.</p>
-            <p><strong>libs/</strong></p>
-            <p>Contiene bibliotecas privadas.</p>
-            <p><strong>src/</strong></p>
-            <p>Contiene todos los archivos de código y recursos para el módulo en los siguientes subdirectorios:</p>
-            <blockquote>
-              <p><strong>androidTest/</strong></p>
-              <p>Contiene código para las pruebas de instrumentación que se ejecutan en un dispositivo Android.                      </p>
-              <p>&nbsp;</p>
-            </blockquote>
-          </blockquote>                  </td>
+    <p>xxxxxxxxxxxxxxxxxx</p>
+    <img src="#" alt="tema2">
+    <br> <br>
 
-          <td><img src="../img/Primer_parcial/img_entorno/img2.png" width="332" height="727" alt="Vista de Proyectos de Android"></td>
-        </tr>
-      </table>
-      <table width="1000" border="0" align="center">
-        <tr>
-          <td><blockquote>
-            <blockquote>
-              <p><strong>main/</strong></p>
-              <p>Contiene los archivos de conjunto de fuentes "principales": el código y los recursos de Android compartidos por todas las variantes de compilación </p>
-              <p><strong>AndroidManifest.xml</strong></p>
-              <p>Describe la naturaleza de la aplicación y cada uno de sus componentes.</p>
-              <p><strong>java/</strong></p>
-              <p>Contiene fuentes de código Java.</p>
-              <p><strong>res/</strong></p>
-              <p>Contiene recursos de aplicación, como archivos de elementos de diseño, archivos de diseño y strings de IU.                    </p>
-            </blockquote>
-          </blockquote></td>
-        </tr>
-      </table>
-      <br> <br>
+    <div class="display-1" id="ve">TEMA6</div>
+    <hr>
+    <p>xxxxxxxxxxxxxxxxxxxxx</p>
+    <img src="#" alt="tema3" class="iu4">
+    <br> <br>
 
-      <div class="display-1" id="be">Configuración de la estructura de Proyecto</div>
-      <hr>
-      <p>Para cambiar diversas opciones de configuración en tu proyecto de Android Studio, abre el diálogo Estructura del proyecto haciendo clic en Archivo > Estructura del proyecto. Contiene las siguientes secciones:</p>
-      <p><img src="../img/Primer_parcial/img_entorno/img3.png" alt="Configuración de la estructura de Proyecto" height="518" width="945">              </p>
-      <p><strong>Ubicación del SDK</strong>: Configura la ubicación del JDK, SDK de Android y NDK de Android de tu proyecto.</p>
-      <p><strong>Proyecto</strong>: Fija la versión para Gradle y el complemento de Android para Gradle, y el nombre de la ubicación del repositorio.</p>
-      <p><strong>Módulos</strong>: Te permite editar opciones de configuración de compilación específicas del módulo, lo que incluye el SDK mínimo y de destino, la firma de la app y las dependencias de biblioteca.</p>
-      <p>La sección de configuración <em>Módulos</em> te permite cambiar las opciones para cada uno de los módulos de tu proyecto. </p>
-      <p><strong>Propiedades</strong>: Especifica las versiones del SDK y de las herramientas de compilación del módulo.</p>
-      <p><strong>Firma</strong>: Especifica el certificado que debe usarse para firmar tu APK.</p>
-      <p><strong>Tipos</strong>: Te permite crear varios <em>tipos</em>; cada tipo especifica un conjunto de ajustes de configuración, como la versión de SDK mínima y de destino del módulo, y el código y nombre de la versión.</p>
-      <p><strong>Dependencias</strong>: Ubica en una lista la biblioteca, el archivo y las dependencias para este módulo. Puedes agregar, modificar y borrar dependencias desde este subpanel. <br>
-        <br>
-      </p>
     </section>
 
 
