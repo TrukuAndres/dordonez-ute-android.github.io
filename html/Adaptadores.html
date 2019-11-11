@@ -13,29 +13,29 @@
     <title>Desarrollo de Sistemas II - Entorno</title>
   </head>
   <body>
-      
+
           <header>
               <div class="hero">
                   <div class="container">
                         <div class="display-3">
                                DESARROLLO DE SISTEMAS II
                         </div>
-                  </div>  
+                  </div>
               </div>
-                  
+
                 <nav class="navbar navbar-expand-lg">
                     <div class="container">
                             <a class="navbar-brand" href="#">Menú</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>
-                          
+
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
                                   <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
-    
+
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Parcial I
@@ -44,11 +44,12 @@
                                     <a class="dropdown-item" href="entorno.html">Entorno</a>
                                     <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
                                     <a class="dropdown-item" href="#">Controles y layout</a>
+                                    <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
                                     <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
                                     <a class="dropdown-item" href="menus.html">Menús</a>
                                   </div>
                                 </li>
-    
+
                                 <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                           Parcial II
@@ -59,7 +60,7 @@
                                           <a class="dropdown-item" href="#">Tema 3</a>
                                         </div>
                                       </li>
-    
+
                                       <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                               Parcial III
@@ -72,14 +73,14 @@
                                           </li>
                               </ul>
                             </div>
-                    </div>     
+                    </div>
               	</nav>
-          </header> 
+          </header>
 
 	 <section class="container">
 		<div class="display-4">ADAPTADORES</div>
         <br>
-        
+
         <!-- CEDEÑO -->
         <div class="display-1" id="bh">TEMA1</div>
               <hr>
@@ -97,23 +98,23 @@
 		<!-- GUZMÁN-->
         <div class="display-1" id="bh">CONTROLES DE NÚMEROS</div>
               <hr>
-              <p>Los controles de números ofrecen una manera rápida de seleccionar un valor de un conjunto. En el estado 
-              predeterminado, un control de números muestra su valor actualmente seleccionado. Al tocar el control de 
-              números, se muestra un menú desplegable con todos los demás valores disponibles, de los cuales el usuario 
+              <p>Los controles de números ofrecen una manera rápida de seleccionar un valor de un conjunto. En el estado
+              predeterminado, un control de números muestra su valor actualmente seleccionado. Al tocar el control de
+              números, se muestra un menú desplegable con todos los demás valores disponibles, de los cuales el usuario
               puede seleccionar uno.</p>
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_1.JPG" width="430" height="250"> 
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_1.JPG" width="430" height="250">
               </center>
-              
+
               <br><br>
               <p>Podemos agregar un control de número a nuestro diseño con el objeto Spinner. Por lo general, debemos hacerlo en nuestro
               diseño XML con un elemento Spinner. Por ejemplo:</p>
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_2.JPG" width="400" height="150"> 
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_2.JPG" width="400" height="150">
               </center>
-              
+
               <br><br>
-              <p>Para rellenar el control de número con una lista de opciones, debemos especificar un SpinnerAdapter en nuestro código 
+              <p>Para rellenar el control de número con una lista de opciones, debemos especificar un SpinnerAdapter en nuestro código
               fuente de la Activity o el Fragment.</p>
               <p>Las clases principales son las siguientes:</p>
               <ul>
@@ -122,66 +123,66 @@
                 <li type="circle">AdapterView.OnItemSelectedListener</li>
               </ul>
               <br>
-              
+
         <div class="display-1" id="bh">RELLENO DEL CONTROL DE NÚMEROS CON LAS ELECCIONES DEL USUARIO</div>
-              <hr>      
+              <hr>
               <p>Las opciones que proporcionemos para el control de números pueden provenir de cualquier fuente, pero deben brindarse
-              mediante un SpinnerAdapter (como un ArrayAdapter) si están disponibles en una matriz o mediante un CursorAdapter 
+              mediante un SpinnerAdapter (como un ArrayAdapter) si están disponibles en una matriz o mediante un CursorAdapter
               si están disponibles a partir de una consulta de la base de datos.</p>
-              
+
               <p>Por ejemplo, si las opciones disponibles para nuestro control de números son predeterminadas, podemos proporcionarlas
               con una matriz de strings definida en un archivo de recursos de strings:</p>
-              
+
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_3.JPG" width="520" height="260"> 
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_3.JPG" width="520" height="260">
               </center>
-              
+
               <br>
-              <p>Con una matriz como esta, podemos usar el siguiente código en nuestro Activity o Fragment para suministrar al control 
+              <p>Con una matriz como esta, podemos usar el siguiente código en nuestro Activity o Fragment para suministrar al control
               de números la matriz mediante una instancia de ArrayAdapter:</p>
-              
+
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_4.JPG" width="580" height="230"> 
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_4.JPG" width="580" height="230">
               </center>
-              
+
               <br>
               <p>El método createFromResource() nos permite crear un ArrayAdapter a partir de la matriz de strings. El tercer argumento
               para este método es un recurso de diseño que define la manera en que se muestra la opción seleccionada en la supervisión
               del control de números. El diseño de simple_spinner_item se proporciona mediante la plataforma y es el predeterminado que
               demos usar, a menos que deseemos definir nuestro propio diseño para la apariencia del control de números.</p>
-              
+
               <p>Luego, debemos llamar a setDropDownViewResource(int) para especificar el diseño que debe usar el adaptador a fin de
-              mostrar la lista de elecciones del control de números, simple_spinner_dropdown_item es otro diseño estándar definido 
+              mostrar la lista de elecciones del control de números, simple_spinner_dropdown_item es otro diseño estándar definido
               por la plataforma.</p>
-              
+
               <p>Llamamos a setAdapter() para aplicar el adaptador a nuestro Spinner.</p>
               <br>
-              
+
         <div class="display-1" id="bh">RESPUESTA A LAS SELECCIONES DEL USUARIO</div>
-              <hr> 
-              <p>Cuando un usuario selecciona un elemento de menú desplegable, el objeto Spinner recibe un evento en relación con el 
+              <hr>
+              <p>Cuando un usuario selecciona un elemento de menú desplegable, el objeto Spinner recibe un evento en relación con el
               elemento seleccionado.</p>
-              
+
               <p>Para definir el controlador del evento de selección de un control de números, implementa la interfaz
-              AdapterView.OnItemSelectedListener y el método de devolución de llamada onItemSelected() correspondiente. 
+              AdapterView.OnItemSelectedListener y el método de devolución de llamada onItemSelected() correspondiente.
               Por ejemplo, esta es una implementación de la interfaz en una Activity:</p>
-              
+
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_5.JPG" width="600" height="260"> 
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_5.JPG" width="600" height="260">
               </center>
               <br>
-              <p>AdapterView.OnItemSelectedListener requiere los métodos de devolución de llamada onItemSelected() y 
+              <p>AdapterView.OnItemSelectedListener requiere los métodos de devolución de llamada onItemSelected() y
               onNothingSelected().</p>
-              
+
               <p>Luego, debemos especificar la implementación de la interfaz; para ello, llamamos a setOnItemSelectedListener():</p>
-              
+
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_6.JPG" width="400" height="130"> 
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_6.JPG" width="400" height="130">
               </center>
-              
+
               <br>
               <p>Si implementamos la interfaz AdapterView.OnItemSelectedListener con nuestra Activity o Fragment (como en el ejemplo
-              anterior), podemos pasar this como la instancia de la interfaz.</p>              
+              anterior), podemos pasar this como la instancia de la interfaz.</p>
         <br>
 
  <!-- Optional JavaScript -->
