@@ -124,8 +124,21 @@
     <p>Debido a que es una clase genérica, puedes usar cualquier objeto para poblar la lista.</p>
     <p>Este adaptador infla los ítems con un layout preestablecido de Android,
     invoca el método toString() de cada elemento y lo setea automáticamente
-    en uno o dos TextViews según el diseño.</p>
-      <img src="#" alt="tema3" class="iu4">
+    en uno o dos TextViews según el diseño.</p><br>
+    <p>Para crear un "Array Adapter"</p><br>
+    <p>PASO 1. La clase ArrayAdapter puede usar los dos; los arreglos y los objetos List como conjuntos de datos.
+       Por ahora, vamos a usar un arreglo como el conjunto de datos.</p>
+      <img src="va1" alt="tema3" class="iu4">
+      <p>PASO 2. Crear un nuevo archivo de formato XML cuyo elemento root es un
+        LinearLayout y nombrelo item.xml.  Arrastre y suelte un complemento
+        Large text dentro de él y ajuste el valor de su atributo id a cheese_name.
+         El archivo de formato XML debería de lucir como este: </p>
+         <img src="va2" alt="tema3" class="iu4">
+         <p>PASO 3. En su activity, crear una nueva instancia de la clase
+           ArrayAdapter usando su constructor. Como sus argumentos, pase
+           el nombre del archivo fuente, el identificador de TextView y la
+           referencia al arreglo. Ahora el adaptador está listo.</p>
+           <img src="va3" alt="tema3" class="iu4">
       <br> <br>
 
     <div class="display-1" id="bvh">List View</div>
