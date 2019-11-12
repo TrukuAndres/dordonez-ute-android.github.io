@@ -85,9 +85,8 @@
       <li><a href="#ve">Array Adapter</a></li>
       <li><a href="#bvh">List View</a></li>
       <li><a href="#vh">Grid View</a></li>
-      <li><a href="#be">x</a></li>
+      <li><a href="#be">Interacción ListView-Adapter</a></li>
     </ul>
-    <img src="#" alt="ImgIntro">
     <br> <br>
 
     <div class="display-1" id="bh">¿Qué es un adaptador?</div>
@@ -100,8 +99,7 @@
     por lo general, con conjuntos de datos.</p><br>
     <p>Un adaptador es el encargado de recuperar datos desde un conjunto de datos
     y para generar objetos "View" gracias a esos datos.</p>
-      <img src="#" alt="Tema1">
-      <br> <br>
+    <br> <br>
 
     <div class="display-1" id="bn">¿Cómo funciona?</div>
     <hr>
@@ -114,8 +112,7 @@
     independientemente del tamaño del conjunto de datos.</p>
     <p>  2. Permiten minimizar las costosas operaciones de formatos y reciclar objetos "View" que ya existen
     y moverlos fuera de pantalla. Se reduce el consumo del CPU.</p>
-      <img src="#" alt="tema2">
-      <br> <br>
+    <br> <br>
 
     <div class="display-1" id="ve">Array Adapter</div>
     <hr>
@@ -126,38 +123,71 @@
     invoca el método toString() de cada elemento y lo setea automáticamente
     en uno o dos TextViews según el diseño.</p><br>
     <p>Para crear un "Array Adapter"</p><br>
-    <p>PASO 1. La clase ArrayAdapter puede usar los dos; los arreglos y los objetos List como conjuntos de datos.
-       Por ahora, vamos a usar un arreglo como el conjunto de datos.</p>
-      <img src="va1" alt="tema3" class="iu4">
-      <p>PASO 2. Crear un nuevo archivo de formato XML cuyo elemento root es un
-        LinearLayout y nombrelo item.xml.  Arrastre y suelte un complemento
-        Large text dentro de él y ajuste el valor de su atributo id a cheese_name.
-         El archivo de formato XML debería de lucir como este: </p>
-         <img src="va2" alt="tema3" class="iu4">
-         <p>PASO 3. En su activity, crear una nueva instancia de la clase
-           ArrayAdapter usando su constructor. Como sus argumentos, pase
-           el nombre del archivo fuente, el identificador de TextView y la
-           referencia al arreglo. Ahora el adaptador está listo.</p>
-           <img src="va3" alt="tema3" class="iu4">
-      <br> <br>
+    <p>PASO 1. La clase ArrayAdapter puede usar los dos; los arreglos y
+    los objetos List como conjuntos de datos. Usaremos un arreglo como
+    el conjunto de datos.</p>
+    <img src="va1.png" alt="tema3" class="iu4">
+    <p>PASO 2. Crear un nuevo archivo de formato XML cuyo elemento root es un
+    LinearLayout. Arrastre y suelte un complemento Large text dentro de él y
+    ajuste el valor de su atributo id a cheese_name.
+    El archivo de formato XML debería de lucir como este: </p>
+    <img src="va2.png" alt="tema3" class="iu4">
+    <p>PASO 3. En su activity, crear una nueva instancia de la clase
+    ArrayAdapter usando su constructor. Como sus argumentos, pase
+    el nombre del archivo fuente, el identificador de TextView y la
+    referencia al arreglo. Ahora el adaptador está listo.</p>
+    <img src="va3.png" alt="tema3" class="iu4">
+    <br> <br>
 
     <div class="display-1" id="bvh">List View</div>
     <hr>
-    <p>XXXXXXXX</p>
-      <img src="#" alt="Tema1">
-      <br> <br>
+    <p>Para mostrar una lista de elementos a través de una función desplegable
+    verticalmente, usted puede usar el complemento ListView. Para añadir el
+    complemento a su activity, usted puede arrastrar y soltarlo dentro del
+    archivo de formato XML activity o crearlo usando su constructor en su
+    código Java.</p>
+    <img src="va4.png" alt="Tema1">
+    <p>Por lo general, ningún otro complemento de interfaz de usuario está
+    colocado dentro de una composición que contiene un ListView. Por lo
+    tanto, pase el ListView al método setContentView() de su activity para
+    que éste ocupe la pantalla completa.</p>
+    <img src="va5.png" alt="Tema1">
+    <p>Para unir el ListView al adaptador que creamos en el paso anterior,
+    llame al método setAdapter() como se muestra debajo.</p>
+    <img src="va6.png" alt="Tema1">
+    <p>Si usted ejecuta su aplicación ahora, entonces podrá ver los contenidos
+    del arreglo en la forma de una lista.</p>
+    <img src="va7.png" alt="Tema1">
+    <br><br>
 
     <div class="display-1" id="vh">Grid View</div>
     <hr>
-    <p>xxxxxxxxxxxxxxxxxx</p>
-      <img src="#" alt="tema2">
-      <br> <br>
+    <p>Tanto ListView y GridView son subclases de la clase abstracta AbsListView
+    y comparten muchas similitudes. Por lo tanto, si usted sabe como usar uno,
+    entonces también sabe como usar el otro.</p>
+    <p>Use el constructor de la clase GridView para crear una nueva instancia
+    y pásele el método setContentView() de su activity.</p>
+    <img src="va8.png" alt="tema2">
+    <p>Para ajustar el número de columnas en la cuadrícula, entonces llame su
+    método setNumColumns(). Voy hacer éste una cuadrícula de dos columnas.</p>
+    <img src="va9.png" alt="tema2">
+    <p>Generalmente, usted desearía ajustar el ancho de las columnas y el
+    espacio entre ellas usando los métodos setColumnWidth(),
+    setVerticalSpacing() y setHorizontalSpacing(). Observe que estos métodos
+    usan pixeles como su unidad de medida.</p>
+    <img src="va10.png" alt="tema2">
+    <p>Ahora puede unir la GridView al adaptador que creamos anteriormente
+    usando el método setAdapter().</p>
+    <img src="va11.png" alt="tema2">
+    <p>Ejecute su aplicación otra vez para ver como luce su GridView.</p>
+    <img src="va12.png" alt="tema2">
+    <br> <br>
 
-    <div class="display-1" id="be">TEMA6</div>
+    <div class="display-1" id="be">Interacción ListView-Adapter</div>
     <hr>
-    <p>xxxxxxxxxxxxxxxxxxxxx</p>
-      <img src="#" alt="tema3" class="iu4">
-      <br> <br>
+    <p></p>
+    <img src="va" alt="tema3" class="iu4">
+    <br> <br>
 
   </section>
 
