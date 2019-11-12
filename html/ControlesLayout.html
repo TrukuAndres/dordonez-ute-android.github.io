@@ -142,6 +142,8 @@ Los TextView son propiedades de texto que nos van a permitir personalizar nuestr
                   <li><a href="#fl">Frame Layout</a></li>
                   <li><a href="#rl">Relative Layout</a></li>
 		  <li><a href="#cl">Constraint Layout</a></li>
+		      <li><a hreg="#gl">Grid Layout</a></li>
+		     
 		      <br><br>
               </ul>
         <center>      
@@ -179,7 +181,22 @@ Los TextView son propiedades de texto que nos van a permitir personalizar nuestr
               <p>Este Layout es útil para trabajar con grandes grupos de elementos porque nos crea un orden jerárquico dinámico, podemos agregar elementos adicionales y darles restricciones para que cuando muevas la posición de la pantalla del móvil, este mantenga en su lugar los elementos de una vista.</p>
       
               <br> <br>
-
+	<div class= "display-1" id ="gl">Grid Layout</div>
+	<hr>
+	<p>
+	El ''GridLayout'' coloca los componentes en forma de matriz, haciendo que todos ocupen el mismo tamaño. Es un Layout adecuado para hacer matrices de cajas de texto (por ejemplo, si queremos hacer un crucigrama o un sudoku) o para matrices de botones (por ejemplo, una calculadora).
+Se puede instanciar pasándole el número de filas y columnas que queremos. Por ejemplo, el siguiente trozo de código prepara una ventana con un GridLayout de 10 filas y 5 columnas.
+	</p>
+	<pre>
+	public class PruebaGridLayout {
+            private static final int COLUMNAS = 10;
+            private static final int FILAS = 5;
+	    public static void main(String [] args)
+                 {
+                     JFrame v = new JFrame();
+                     v.getContentPane().setLayout(new GridLayout(FILAS,COLUMNAS));
+                     ...
+	</pre>
           </section>
     
 
