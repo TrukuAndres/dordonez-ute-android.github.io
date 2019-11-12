@@ -117,7 +117,7 @@
 
     <div class="display-1" id="ve">Array Adapter</div>
     <hr>
-    <p>Realizar este tipo de arrays en Android nos provee subclases de adaptadores que nos facilitan la implementación.
+    <p>Como habíamos dicho, Android nos provee subclases de adaptadores que nos facilitan la implementación.
     ArrayAdapter es uno de los tipos de adaptadores más sencillos y populares.</p>
     <p>Debido a que es una clase genérica, puedes usar cualquier objeto para poblar la lista.</p>
     <p>Este adaptador infla los ítems con un layout preestablecido de Android,
@@ -215,7 +215,8 @@
     operaciones que usted realiza en él.</p>
     <p>El método findViewById(), el cual consume muchos ciclos del CPU,
     es llamado cada vez que el método getView() es llamado.</p>
-    <p>Para evitar esto y para mejorar el desempeño del adaptador de vista,
+    <p>El uso de esete tipo de vista nos permite evitar este tipo de llamadas y mejora
+    el desempeño del adaptador de vista,
     necesitamos almacenar los resultados del método findViewById()
     dentro del objeto convertView. Para hacer eso, podemos usar un objeto
     view holder, el cual no es nada más que un objeto de una clase que
