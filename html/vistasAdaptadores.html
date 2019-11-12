@@ -113,7 +113,7 @@
     independientemente del tamaño del conjunto de datos.</p>
     <p>  2. Permiten minimizar las costosas operaciones de formatos y reciclar objetos "View" que ya existen
     y moverlos fuera de pantalla. Se reduce el consumo del CPU.</p>
-    <br> <br>
+    <br><br>
 
     <div class="display-1" id="ve">Array Adapter</div>
     <hr>
@@ -129,18 +129,26 @@
     <p>PASO 1. La clase ArrayAdapter puede usar los dos; los arreglos y
     los objetos List como conjuntos de datos. Usaremos un arreglo como
     el conjunto de datos.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va1.png" class="iu3"><br>
+	<center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va1.PNG" class="iu3"><br><br>
+	</center>
+    
     <p>PASO 2. Crear un nuevo archivo de formato XML cuyo elemento root es un
     LinearLayout. Arrastre y suelte un complemento Large text dentro de él y
     ajuste el valor de su atributo id a cheese_name.
     El archivo de formato XML debería de lucir como este: </p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va2.png" class="iu3"><br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va2.PNG" class="iu3"><br><br>
+	</center>
+	
     <p>PASO 3. En su activity, crear una nueva instancia de la clase
     ArrayAdapter usando su constructor. Como sus argumentos, pase
     el nombre del archivo fuente, el identificador de TextView y la
     referencia al arreglo. Ahora el adaptador está listo.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va3.png" class="iu3"><br>
-    <br> <br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va3.PNG" class="iu3"><br><br>
+    </center>
+	<br> <br>
 
     <div class="display-1" id="bvh">List View</div>
     <hr>
@@ -149,19 +157,27 @@
     complemento a su activity, usted puede arrastrar y soltarlo dentro del
     archivo de formato XML activity o crearlo usando su constructor en su
     código Java.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va4.png" class="iu3"><br>
-    <p>Por lo general, ningún otro complemento de interfaz de usuario está
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va4.PNG" class="iu3"><br><br>
+    </center>
+	<p>Por lo general, ningún otro complemento de interfaz de usuario está
     colocado dentro de una composición que contiene un ListView. Por lo
     tanto, pase el ListView al método setContentView() de su activity para
     que éste ocupe la pantalla completa.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va5.png" class="iu3"><br>
-    <p>Para unir el ListView al adaptador que creamos en el paso anterior,
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va5.PNG" class="iu3"><br><br>
+    </center>
+	<p>Para unir el ListView al adaptador que creamos en el paso anterior,
     llame al método setAdapter() como se muestra debajo.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va6.png" class="iu3"><br>
-    <p>Si usted ejecuta su aplicación ahora, entonces podrá ver los contenidos
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va6.PNG" class="iu3"><br><br>
+    </center>
+	<p>Si usted ejecuta su aplicación ahora, entonces podrá ver los contenidos
     del arreglo en la forma de una lista.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va7.png" >
-    <br><br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va7.PNG">
+    </center>
+	<br><br>
 
     <div class="display-1" id="vh">Grid View</div>
     <hr>
@@ -170,20 +186,30 @@
     entonces también sabe como usar el otro.</p>
     <p>Use el constructor de la clase GridView para crear una nueva instancia
     y pásele el método setContentView() de su activity.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va8.png" class="iu3"><br><br>
-    <p>Para ajustar el número de columnas en la cuadrícula, entonces llame su
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va8.PNG" class="iu3"><br><br>
+    </center>
+	<p>Para ajustar el número de columnas en la cuadrícula, entonces llame su
     método setNumColumns(). Voy hacer éste una cuadrícula de dos columnas.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va9.png" class="iu3"><br><br>
-    <p>Generalmente, usted desearía ajustar el ancho de las columnas y el
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va9.PNG" class="iu3"><br><br>
+    </center>
+	<p>Generalmente, usted desearía ajustar el ancho de las columnas y el
     espacio entre ellas usando los métodos setColumnWidth(),
     setVerticalSpacing() y setHorizontalSpacing(). Observe que estos métodos
     usan pixeles como su unidad de medida.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va10.png" class="iu3"><br><br>
-    <p>Ahora puede unir la GridView al adaptador que creamos anteriormente
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va10.PNG" class="iu3"><br><br>
+    </center>
+	<p>Ahora puede unir la GridView al adaptador que creamos anteriormente
     usando el método setAdapter().</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va11.png"><br><br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va11.PNG"><br><br>
+	</center>
     <p>Ejecute su aplicación otra vez para ver como luce su GridView.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va12.png"><br><br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va12.PNG"><br><br>
+	</center>
     <br> <br>
 
     <div class="display-1" id="be">Interacción ListView-Adapter</div>
@@ -192,14 +218,18 @@
     proceso de comunicación interno para poblarla con una fuente de datos.
     Dicha comunicación se basa principalmente en los siguientes métodos
     del adaptador:</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va13.png" class="iu3"><br><br>
-    <p>Aunque estos tres métodos no son los únicos que existen para establecer
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va13.PNG" class="iu3"><br><br>
+	</center>
+	<p>Aunque estos tres métodos no son los únicos que existen para establecer
     la relación, a mi parecer son los más significativos para entender el
     concepto de un adaptador.</p>
     <p>Si aún no te ha quedado claro, entonces puedes ver esta
     ilustración sobre cómo sería esta relación:</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va14.png" class="iu3"><br><br>
-    <h5>Actualizar un ListView</h5>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va14.PNG" class="iu3"><br><br>
+	</center>
+	<h5>Actualizar un ListView</h5>
     <p>Si en algún momento los datos de la lista cambian, el encargado de
     actualizar los elementos será el adaptador. El método que informa dichas
     modificaciones es notifyDataSetChanged(). Cuando se llama, los views son
@@ -207,8 +237,10 @@
     <p>Este método es ejecutado automáticamente por el adaptador cuando se
     llaman métodos que modifiquen la fuente de datos.</p>
     <p>Algunos son:</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va15.png" class="iu3"><br><br>
-    <br> <br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va15.PNG" class="iu3"><br><br>
+	</center>
+	<br> <br>
 
     <div class="display-1" id="beh">Objeto View Holder</div>
     <hr>
@@ -225,10 +257,14 @@
     <p>Debido a que el diseño tiene dos complementos TextView, la clase view
     holder también debe tener dos complementos TextView.
     He nombrado la clase ViewHolder.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va16.PNG" class="iu3"><br><br>
-    <p>Al utilizar el objeto View Holder terminamos con una interfaz como la siguiente.</p>
-    <img src="../img/Primer_parcial/img_vistaAdaptadores/va17.PNG" class="iu3"><br>
-    <br><br>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va16.PNG" class="iu3"><br><br>
+	</center>
+	<p>Al utilizar el objeto View Holder terminamos con una interfaz como la siguiente.</p>
+    <center>
+	<img src="../img/Primer_parcial/img_vistaAdaptadores/va17.PNG" class="iu3"><br>
+    </center>
+	<br><br>
 
   </section>
 
