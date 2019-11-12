@@ -72,8 +72,8 @@ background-color:#164e82;
  pre {
   font-size: 12px;
   border: 2px solid grey;
-  width: 450px;
+  width: auto;
   border-left: 12px solid green;
   border-radius: 5px;
-  padding: 14px;
+  padding: 10px;
 }
