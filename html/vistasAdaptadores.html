@@ -86,6 +86,7 @@
       <li><a href="#bvh">List View</a></li>
       <li><a href="#vh">Grid View</a></li>
       <li><a href="#be">Interacción ListView-Adapter</a></li>
+      <li><a href="#beh">Objeto View Holder</a></li>
     </ul>
     <br> <br>
 
@@ -185,9 +186,47 @@
 
     <div class="display-1" id="be">Interacción ListView-Adapter</div>
     <hr>
-    <p></p>
-    <img src="va" alt="tema3" class="iu4">
+    <p>Cuando relacionas un adaptador a una lista, inmediatamente comienza un
+    proceso de comunicación interno para poblarla con una fuente de datos.
+    Dicha comunicación se basa principalmente en los siguientes métodos
+    del adaptador:</p>
+    <img src="va13.png" alt="tema3" class="iu4">
+    <p>Aunque estos tres métodos no son los únicos que existen para establecer
+    la relación, a mi parecer son los más significativos para entender el
+    concepto de un adaptador.</p>
+    <p>Si aún no te ha quedado claro, entonces puedes ver esta
+    ilustración sobre cómo sería esta relación:</p>
+    <img src="va14.png" alt="tema3" class="iu4"><br>
+    <h5>Actualizar un ListView</h5>
+    <p>Si en algún momento los datos de la lista cambian, el encargado de
+    actualizar los elementos será el adaptador. El método que informa dichas
+    modificaciones es notifyDataSetChanged(). Cuando se llama, los views son
+    refrescados y así el usuario percibe el cambio en tiempo real.</p>
+    <p>Este método es ejecutado automáticamente por el adaptador cuando se
+    llaman métodos que modifiquen la fuente de datos.</p>
+    <p>Algunos son:</p>
+    <img src="va15.png" alt="tema3" class="iu4"><br>
     <br> <br>
+
+    <div class="display-1" id="beh">Objeto View Holder</div>
+    <hr>
+    <p>El método getView() es llamado repetidamente por el adaptador vista para
+    rellenarlo. Por lo tanto, usted debe tratar de minimizar el número de
+    operaciones que usted realiza en él.</p>
+    <p>El método findViewById(), el cual consume muchos ciclos del CPU,
+    es llamado cada vez que el método getView() es llamado.</p>
+    <p>Para evitar esto y para mejorar el desempeño del adaptador de vista,
+    necesitamos almacenar los resultados del método findViewById()
+    dentro del objeto convertView. Para hacer eso, podemos usar un objeto
+    view holder, el cual no es nada más que un objeto de una clase que
+    puede almacenar los complementos presentes en el diseño.</p>
+    <p>Debido a que el diseño tiene dos complementos TextView, la clase view
+    holder también debe tener dos complementos TextView.
+    He nombrado la clase ViewHolder.</p>
+    <img src="va16.png" alt="Tema1">
+    <p>Al utilizar el objeto View Holder terminamos con una interfaz como la siguiente.</p>
+    <img src="va17.png" alt="Tema1">
+    <br><br>
 
   </section>
 
