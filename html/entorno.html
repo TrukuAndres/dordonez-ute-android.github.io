@@ -80,7 +80,9 @@
           <section class="container">
               <div class="display-4">ENTORNO</div>
               <hr>
-              <p></p>
+              <p>x</p>
+
+              <p>x.</p>
               <ul>
                   <li><a href="#bh">Introduccion a Android Studio</a></li>
                   <li><a href="#bn">Estructura del Proyecto</a></li>
@@ -88,10 +90,11 @@
                   <li><a href="#bvh">Archivos de Proyecto</a></li>
                   <li><a href="#vh">Vista de Proyectos de Android</a></li>
                   <li><a href="#be">Configuración de la estructura de Proyecto</a></li>
-		  
-		<li><un href="#fm">Como crear un Proyecto</a></li>
-	<li><un href="#ffm">Como importar un proyecto existente</a></li>
-	<li><un href="#ff">Conceptos básicos del flujo de trabajo para desarrolladores</a></li>
+		  <li><a href="#ccupo">Cómo crear un Proyecto</a></li>
+		  <li><a href="#ceup">Cómo elegir un Proyecto</a></li>
+		  <li><a href="#ccup">Cómo configurar un proyecto</a></li>
+		  <li><a href="#ciupe">Cómo importar un proyecto existente</a></li>
+		  <li><a href="#cbdfdt">Conceptos básicos del flujo de trabajo para desarrolladores</a></li>
 		
 		      
 		      
@@ -228,13 +231,55 @@
               <p><strong>Dependencias</strong>: Ubica en una lista la biblioteca, el archivo y las dependencias para este módulo. Puedes agregar, modificar y borrar dependencias desde este subpanel. <br>
                 <br>
               </p>
-		<div class="display-1" id="fm"> Como crear un proyecto </div>
+		<div class="display-1" id="ccupo"> Cómo crear un proyecto </div>
 		<hr>
-		<p> Android Studio nos permite la creacion de aplicaciones en Sistema Operativo Android para varios factores de forma como son los teléfonos, tablets, televisores y dispositivos Wear.</p>
-		<p>Si se tiene un proyecto abierto, para comenzar a crear  un nuevo proyecto selecciona <strong>File > New > New Project</strong> en la parte del menu principal</p>
-		<p>El asistente <strong>Create New Project</strong> permite elegir el tipo de proyecto que se desea crear y se completa con codigo y recursos para comenzar</p>
-		<p>En la siguiente imagen se puede mostrar un proyecto de actividad basica en Android para un telefono o una tablet</p>
-		<p><center><img src="img/Primer_parcial/img_entorno/creacion1.png" alt="Como elegir tu proyecto" height="300" width="300"></center></p>  
+		<p>Android Studio nos permite la creación de aplicaciones en Sistema Operativo Android para varios factores de forma como son los teléfonos, tablets, televisores y dispositivos Wear.</p>
+
+		<p>Si no tenemos un proyecto abierto, Android Studio nos muestra una pantalla donde nos da la bienvenida y se procede a dar clic en <strong>Start a new Android Studio Project</strong> para crear un nuevo proyecto</p>
+		
+		<img src="">
+
+		<p>Si se tiene un proyecto abierto, para comenzar a crear  un nuevo proyecto selecciona <strong>File > New > New Project</strong> en la parte del menú principal</p>
+		<p>Una vez ingresado a <strong>New Project</strong> se nos desprende una pantalla donde nos permitirá elegir el tipo de proyecto que se desea crear y se completa con código y recursos para poder comenzar nuestro proyecto.</p>
+		<img src="">
+<div class="display-1" id="ceup"> Cómo elegir un proyecto </div>	
+		<hr>	
+		<p>El asistente <strong>Create New Project</strong> permite elegir el tipo de proyecto que se desea crear y se completa con código y recursos para comenzar</p>
+		<p>En la siguiente imagen se puede mostrar un proyecto de actividad básica en Android para un teléfono o una tablet</p>
+		<img src="">
+		<p>Después de seleccionar el tipo de proyecto que se desea crear, Android Studio incluye el código de muestra y recursos dicho anteriormente y presentados a continuación</p>
+<div class="display-1" id="ccup"> Cómo configurar un proyecto </div>
+		<hr>
+		<p>Para configurar los ajustes de nuestro proyecto, tal y como se muestra en la imagen, donde encontramos el nombre de nuestra aplicación o <strong>Name</strong>, <strong>Package Name</strong> que es el nombre del paquete o ID de aplicación, <strong>Save</strong> Location donde se guardara nuestro proyecto en la ruta local, el <strong>lenguage</strong> o  lenguaje a programar donde se escogerá Java  y un nivel de API o <strong>Minimum API level</strong> donde es recomendable trabajar desde un nivel inferior ya que en la actualidad existen personas que aún tienen su Smartphone antiguo y al trabajar con una API inferior permitirá tener acceso desde ese modelo de API en adelante.</p>
+		<p>Si el tipo de proyecto que se seleccionó admite experiencias instantáneas a través de Google Play Instant y se desea habilitarlo para la app, se marca la casilla junto a <strong>This project will support instant apps.</strong></p>
+		<p>Finalmente si en el proyecto se necesita usar las bibliotecas de AndroidX de manera predeterminada, que son reemplazos mejorados de las bibliotecas de compatibilidad de Android, se  marca la casilla junto a <strong>Use AndroidX artifacts.</strong></p>
+		<p>Android Studio una vez creado nuestro proyecto podemos observar el código y los recursos básicos para comenzar con la programación de nuestra app.</p>
+
+		<img src="">
+		<img src="">
+<div class="display-1" id="ciupe"> Cómo importar un proyecto existente</div>
+		<hr>
+		<p>Para importar un proyecto existente en Android Studio, sigue estos pasos:</p>
+		<ul>
+			<li type="square">Haz clic en File > New > Import Project.</li>
+			<li type="square">En la ventana que aparece, ve hasta el directorio raíz del proyecto que deseas importar.</li>
+			<li type="square">Haz clic en OK.</li>
+		</ul>
+		<p>Finalmente Android Studio abre el proyecto en una nueva ventana de IDE e indexa el contenido del proyecto.</p>
+		<img src="">
+		<img src="">
+		<p>Si se importa un proyecto desde el control de versión, se usa el menú <strong>File > New > Project from Version Control.</strong></p>
+		<img src="">
+<div class="display-1" id="cbdfdt"> Conceptos básicos del flujo de trabajo para desarrolladores</div>
+		<hr>
+		<p>El flujo de trabajo de desarrollo de una app para Android es conceptualmente el mismo que el de otras plataformas de apps. Sin embargo, compilar de manera eficiente una app para Android bien diseñada requiere algunas herramientas especializadas. En la siguiente lista, se proporciona una descripción general del proceso de compilación de una app para Android y se incluyen vínculos a algunas herramientas de Android Studio que deberías usar en cada fase del desarrollo.</p>
+		<ul>
+			<li type="circle"><strong>Configura tu espacio de trabajo</strong><br>Fase principal donde se basa en la instalación de nuestro software que es Android Studio y posteriormente crear un proyecto.</li>
+			<li type="circle"><strong>Escribe tu app</strong><br>Android Studio ofrece una variedad de herramientas que ayudan a agilitar el trabajo, escribir un codigo de calidad y diseñar una interfaz de usuario con los recursos necesarios para todo tipo de dispositivos android</li>
+			<li type="circle"><strong>Compila y ejecuta tu app</strong><br>En esta fase de compilar el proyecto, se compilara en un paquete APK depurable que se puede instalar y ejecutar en el emulador o en un dispositivo que ejecute Android</li>
+			<li type="circle"><strong>Depura, genera perfiles y realiza pruebas</strong><br>En esta fase iterativa se continua escribiendo la aplicacion, con mayor enfasis en la solucion de errores y optimizacion del rendimiento, donde las pruebas ayudara con eso</li>
+			<li type="circle"><strong>Publica tu app</strong><br>Una vez finalizado, se controla la version y la firma con clave para la publicacion de la aplicacion realizada</li>
+		</ul>	
           </section>
 
 
