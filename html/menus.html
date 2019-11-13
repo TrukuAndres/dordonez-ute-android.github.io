@@ -86,6 +86,11 @@
                 <li><a href="#be">Menú contextual y modo de acción contextual.</a></li>
                 <li><a href="#beh">Menú emergente.</a></li>
                 <li><a href="#def">Definir un menú en XML.</a></li>
+                <li><a href="#defs">Crear de un submenú en XML.</a></li>
+                <li><a href="#mo">Crear un menú de opciones.</a></li>
+                <li><a href="#cl">Manejar eventos de clic.</a></li>
+                <li><a href="#mc">Crear menús contextuales.</a></li>
+                
               </ul>
             <br> <br>
               <div class="display-1" id="qu">¿Qué son los menús?</div>
@@ -144,6 +149,56 @@
               <p>"android:showAsAction" Especifica cuándo y cómo el elemento debe aparecer como un elemento de acción en la barra de app.</p>
 
               <br> <br>
+            <div class="display-1" id="defs">Crear de un submenú en XML</div>
+              <hr>
+              <p>Estos submenús son necesarios cuando la aplicacíon</p>
+              <p>Para la deficinión de un submenú en XML basta con definir un menú dentro de un item del menú principal.</p>
+              <p><b>Hay que recordar que no se puede ingresar un submenú dentro de otro submenú.</b></p>
+
+              <p><b>Ejemplo de submenú en XML:</b></p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus5.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br><br>
+              <div class="display-1" id="mo">Crear un menú de opciones</div>
+              <hr>
+              <p>Como miramos antes en este menú debemos ingresar opciones relevantes para el contexto actual</p>
+              <p>Para especificar el menú de opciones para una actividad, se sobreescribe el método onCreateOptionsMenu() utilizando la notación @Override</p>
+              <p>En esta parte podemos agrandar el recurso de menú que definimos en el XML</p>
+              <p><b>Ejemplo de sobreescritura del método onCreateOptionsMenu()</b></p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus6.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br><br>
+
+              <div class="display-1" id="cl">Manejar eventos de clic</div>
+              <hr>
+              <p>Cuando el usuario selecciona un elemento del menú de opciones el sistema llama al método onOptionsItemSelected() de la actividad. Este elemento pasa al MenuItem seleccionado.</p>
+              <p>Utiliznado getItemId() podemos hacer coincidir este ID con elementos de menú conocidos para realizar la acción.</p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus7.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br><br>
+
+              <div class="display-1" id="mc">Crear menús contextuales</div>
+              <hr>
+              <p>Como indicamos antes el menú contextual brinda acciones que afectan a un elemento del marco contextual especifico.</p>
+              <p>Estos menús pueden ser:</p>
+              <ul>
+                <li >Menú contextual flotante.</li>
+                <li >Modo de acción contextual.</li>
+              </ul>
+              <p><b>Ejemplo de los dos tipos de menú contextual. A la derecha menú contextual flotante y a la izquierda modo de acción contextual.</b></p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus8.png" class="iu3"  width="400" height="400" ><br>
+              </center>
+              <br><br>
+
+             
           </section>
 
 
