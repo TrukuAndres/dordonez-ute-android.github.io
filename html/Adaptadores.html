@@ -86,26 +86,26 @@
               <hr>              
               <p> Todos los elementos del diseño se crear usando una jerarquía de objetos View y ViewGroup. Una View suele mostrar un elemento que el usuario puede ver y con el que puede interactuar. Por su parte, ViewGroup es un contenedor invisible que define la estructura de diseño de View y otros objetos ViewGroup</p>
               <center>              
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_1.PNG" class="img-fluid">
+              <img src="../img/Primer_parcial/img_adaptadores/Diseño_1.png" class="img-fluid">
               </center>
 	      	<br>	
               <h3>Atributos</h3>
               <p>Cada objeto View y ViewGroup admite su propia variedad de atributos XML. Algunos atributos son específicos de un objeto View (por ejemplo, TextView admite el atributo textSize), aunque estos atributos también son heredados por cualquier objeto View que pueda extender esta clase. Algunos son comunes para todos los objetos View, porque se heredan de la clase raíz View (como el atributo id).</p>
               <p>El símbolo arroba (@) al comienzo de la string indica que el analizador de XML debe analizar y expandir el resto de la string de ID e identificarla como un recurso de ID. El símbolo más (+) significa que es un nuevo nombre de recurso que se debe crear y agregar a nuestros recursos (en el archivo R.java).</p>
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_2.PNG" class="img-fluid"><br>
+              <img src="../img/Primer_parcial/img_adaptadores/Diseño_2.png" class="img-fluid"><br>
               </center>  
 	    	<br>
               <p>Luego, crear una instancia del objeto View y capturarla desde el diseño (generalmente en el método onCreate())</p>            
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_3.PNG" class="img-fluid"><br>
+              <img src="../img/Primer_parcial/img_adaptadores/Diseño_3.png" class="img-fluid"><br>
               </center>
 		<br>
               <h3>Creación de diseños con un adaptador</h3>
               <p>Cuando el contenido del diseño sea dinámico o no sea predeterminado, se puede usar un diseño con la subclase AdapterView para completar el diseño con vistas durante el tiempo de ejecución. Una subclase de la clase AdapterView usa un Adapter para enlazar datos con el diseño. Adapter se comporta como intermediario entre la fuente de datos y el diseño AdapterView; Adapter recupera los datos (de una fuente como una matriz o una consulta a la base de datos) y convierte cada entrada en una vista que puedes agregar al diseño AdapterView.</p>
               <p>Los diseños comunes respaldados por un adaptador incluyen:</p>
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_4.PNG" class="img-fluid">
+              <img src="../img/Primer_parcial/img_adaptadores/Diseño_4.png" class="img-fluid">
               </center>
 		<!---->
         <br> <br>
@@ -118,34 +118,34 @@
 		</p>
 		<div class="display-1" id="bh">Cómo se usa un RecyclerView</div>
 		<p>Se debe definir un adaptador con un LayoutManager.</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler3.JPG" width="550" height="200" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler3.jpg" width="550" height="200" class="img-fluid"></div>
 		<li>Clase Adapter: Configura el modelo de datos a ser mostrados en las vistas.(elementos)</li>
 		<li>Elemento LayoutManager: Define la posicion de los elementos (lista, cuadricula)</li> 
 		<li>Decide cuándo reciclar las vistas de items que ya no son visibles.</li>
 		</br>
 		<p>Para su presentación disponemos de las clases definidas para LayoutManager:</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler4.JPG" width="550" height="200" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler4.jpg" width="550" height="200" class="img-fluid"></div>
 		</br>
 		<div class="display-1" id="bh">Crear lista con RecyclerView</div>
               <hr>
 		
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recyclerview1.JPG" width="250" height="450" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recyclerview1.jpg" width="250" height="450" class="img-fluid"></div>
 		
 		<h4>1. Agregar Dependencias</h4>	
 		<p>Para acceder a RecyclerView personalizado, debe agregar las Bibliotecas de soporte (dependencia)</p>
 		<p>Abrir el archivo build.gradle / Agregar Dependencia</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/imp_recycler.JPG" width="500" height="100" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/imp_recycler.jpg" width="500" height="100" class="img-fluid"></div>
         
 		<h4>2.Diseñar layout que contenga RecyclerView</h4>
 		<p>activity_main.xml </p>
 		<p>En el layout de nuestra activity incluimos la etiqueta </p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler5.JPG" width="500" height="150" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler5.jpg" width="500" height="150" class="img-fluid"></div>
 		
 		<h4>3.Diseñar layout para cada elemento de recyclerview</h4>
 		<p>elemento_personaje.xml </p>
 		Incluiremos campos de la lista como: imagen, nombre, descripcion.
 		Cada uno con su identificador.
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler6.JPG" width="600" height="350" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler6.jpg" width="600" height="350" class="img-fluid"></div>
 		
 		
 		<h4>4.Implementar actividad que visualice el RecyclerView</h4>
@@ -153,7 +153,7 @@
 		Se define e inicializan recyclerview y layoutManager
 		Método onCreate : inicializa el RecyclerView
 		En el método setContentView se asigna el activity_main.
-			<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler7.JPG" width="500" height="250" class="img-fluid"></div>	
+			<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler7.jpg" width="500" height="250" class="img-fluid"></div>	
 		
 		<h4>5.Crear el adaptador </h4>
 		<p>Adaptador.java </p>
@@ -161,7 +161,7 @@
 		<!---->
         </br> 
 		<p>Finalmente tenemos la lista personalizada</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler8.JPG" width="300" height="400" class="img-fluid"></div>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler8.jpg" width="300" height="400" class="img-fluid"></div>
 		</br>
         <br> <br>
 
@@ -176,7 +176,7 @@
               con una matriz de strings definida en un archivo de recursos de strings:</p>
 
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_1.JPG" width="520" height="260" class="img-fluid">
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_1.jpg" width="520" height="260" class="img-fluid">
               </center>
 
               <br>
@@ -184,7 +184,7 @@
               de números la matriz mediante una instancia de ArrayAdapter:</p>
 
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_2.JPG" width="580" height="230" class="img-fluid">
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_2.jpg" width="580" height="230" class="img-fluid">
               </center>
 
               <br>
@@ -210,7 +210,7 @@
               Por ejemplo, esta es una implementación de la interfaz en una Activity:</p>
 
               <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_3.JPG" width="600" height="260" class="img-fluid">
+              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_3.jpg" width="600" height="260" class="img-fluid">
               </center>
               <br>
               <p>AdapterView.OnItemSelectedListener requiere los métodos de devolución de llamada onItemSelected() y
