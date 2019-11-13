@@ -88,16 +88,19 @@
               <center>              
               <img src="../img/Primer_parcial/img_adaptadores/Diseño_1.PNG">
               </center>
+	      	<br>	
               <h3>Atributos</h3>
               <p>Cada objeto View y ViewGroup admite su propia variedad de atributos XML. Algunos atributos son específicos de un objeto View (por ejemplo, TextView admite el atributo textSize), aunque estos atributos también son heredados por cualquier objeto View que pueda extender esta clase. Algunos son comunes para todos los objetos View, porque se heredan de la clase raíz View (como el atributo id).</p>
               <p>El símbolo arroba (@) al comienzo de la string indica que el analizador de XML debe analizar y expandir el resto de la string de ID e identificarla como un recurso de ID. El símbolo más (+) significa que es un nuevo nombre de recurso que se debe crear y agregar a nuestros recursos (en el archivo R.java).</p>
               <center>
               <img src="../img/Primer_parcial/img_adaptadores/Diseño_2.PNG"><br>
-              </center>
+              </center>  
+	    	<br>
               <p>Luego, crear una instancia del objeto View y capturarla desde el diseño (generalmente en el método onCreate())</p>            
               <center>
               <img src="../img/Primer_parcial/img_adaptadores/Diseño_3.PNG"><br>
               </center>
+		<br>
               <h3>Creación de diseños con un adaptador</h3>
               <p>Cuando el contenido del diseño sea dinámico o no sea predeterminado, se puede usar un diseño con la subclase AdapterView para completar el diseño con vistas durante el tiempo de ejecución. Una subclase de la clase AdapterView usa un Adapter para enlazar datos con el diseño. Adapter se comporta como intermediario entre la fuente de datos y el diseño AdapterView; Adapter recupera los datos (de una fuente como una matriz o una consulta a la base de datos) y convierte cada entrada en una vista que puedes agregar al diseño AdapterView.</p>
               <p>Los diseños comunes respaldados por un adaptador incluyen:</p>
@@ -110,17 +113,19 @@
   		<!-- CALO -->
         
 		 <div class="display-1" id="bh">RecyclerView</div>
+		 <br>
 		<p>Es una versión avanzada de ListView
 		Lo que hace es mostrar una lista desplazable de elementos basada en grandes conjuntos de datos
 		(datos que van a cambiar)
 		</p>
 		<div class="display-1" id="bh">Cómo se usa un RecyclerView</div>
+		 <br>
 		<p>Se debe definir un adaptador con un LayoutManager.</p>
 		<p>El adaptador acercará el modelo de datos para ser mostrados y el LayoutManager 
 		será el responsable de posicionar cada ítem dentro del RecyclerView  
 		y de decidir cuándo reciclar las vistas de items que ya no son visibles.</p>
 		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler3.JPG" width="550" height="200"></div>
-		 
+		 <br>
 		 <div class="display-1" id="bh">Crear una lista con RecyclerView</div>
               <hr>
 		<p>El widget RecyclerView es una versión avanzada y flexible de ListView.</p>
