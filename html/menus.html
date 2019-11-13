@@ -89,7 +89,10 @@
                 <li><a href="#defs">Crear de un submenú en XML.</a></li>
                 <li><a href="#mo">Crear un menú de opciones.</a></li>
                 <li><a href="#cl">Manejar eventos de clic.</a></li>
-                <li><a href="#mc">Crear menús contextuales.</a></li>
+                <li><a href="#mc">Crear menús contextuales.</a></li
+                <li ><a href="#mcf">Menú contextual flotante.</a></li>
+                <li ><a href="#mcmac">Modo de acción contextual.</a></li>
+                <li><a href="#me">Cómo crear un menú emergente.</a></li>
                 
               </ul>
             <br> <br>
@@ -197,7 +200,76 @@
               <img src="../img/Primer_parcial/img_menus/img_menus8.png" class="iu3"  width="400" height="400" ><br>
               </center>
               <br><br>
+             <div class="display-1" id="mcf">Menú contextual flotante</div>
+              <hr>
+              <p>En este caso un menú aparece como una lista flotante de elementos del menú, es muy similar a un cuadro de dialogo.</p>
+              <p>A diferencia del "modo de acción contextual" aqui solo se admite un valor contextual.</p>
+              <p>Pasos para crear un menú contextual flotante<p>
+              <p><b>1</b> Registra la View con la que se debe asociar el menú contextual llamando a registerForContextMenu() y pásalo a la View.</p>
+              <p><b>2</b> Implementar el método onCreateContextMenu() en Activity.</p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus9.png" class="iu3" width="700" height="300"><br>
+              <br><br>
+              </center>
 
+              <p><b>3</b> Implementa onContextItemSelected().</p>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus10.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br><br>
+
+              <div class="display-1" id="mcmac">Modo de acción contextual</div>
+              <hr>
+              <p>En este caso no aparece una lista flotante sino que se selecciona a un contexto y en la parte superior aparecera una barra de acciones contextuales.</p>
+              <p>En este modo el usuario puede seleccionar varios elementos, como ejemplo seleccionar varios mensajes en la aplicación Whatsaap para eliminarlos.</p>
+              <p>Podemos crear modos de accion individuales o grupales.<p>
+
+              <p><b>Pasos para crear modo de acción contextual para vistas individuales.</b></p>
+              <p><b>1</b> Implementa la interfaz ActionMode.Callback. En los métodos de devolución de llamada se puede especificar las acciones de la barra de acciones contextuales,
+                responder a eventos de clic en elementos de acción o manejar otros eventos del ciclo de vida para el modo de acción.</p>
+
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus11.png" class="iu3" width="700" height="700"><br>
+              <br><br>
+              </center>
+
+              <p><b>2</b> Llamar a startActionMode() cuando se desee mostrar la barra.</p>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus12.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br><br>
+              <p><b>Pasos para habilitar acciones contextuales por lotes en una ListView o GridView.</b></p>
+              <p><b>1</b> Implementa la interfaz AbsListView.MultiChoiceModeListener y establécela para la vista de grupo con setMultiChoiceModeListener().</p>
+
+              <p><b>2</b> Llama a setChoiceMode() con el argumento CHOICE_MODE_MULTIPLE_MODAL.</p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus13.png" class="iu3" width="700" height="700"><br>
+              </center>
+              <br><br>
+
+              <div class="display-1" id="me">Cómo crear un menú emergente</div>
+              <hr>
+              <p>Tambien conocido como PopUp es un menú anclado a una View.</p><br>
+              <p>Proporcionar un menú de estilo de ampliación para las acciones que se relacionan con contenido específico .</p>
+              <p><b>Pasos para crear un PopUp</b></p>
+              <p><b>1</b> Crear una instancia de PopupMenu con su constructor, que toma el Context de la aplicación actual y la View a la que debe anclarse el menú.</p>
+              <p><b>2</b> Usa MenuInflater para inflar el recurso de menú hacia el objeto Menu devuelto por PopupMenu.getMenu(). Llama a PopupMenu.show()</p>
+              <br>
+              <p><b>Ejemplo botón XML con atributo onClick que muestra un menú emergente:</b></p>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus14.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br>
+              <p><b>Mostrar menú emergente desde una actividad:</b></p>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus15.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br> <br>
+
+              
              
           </section>
 
