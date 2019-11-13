@@ -78,10 +78,72 @@
                       </nav>
           </header>
           <section class="container">
-              <div class="display-4">Objetivo del sitio</div>
+              <div class="display-4">MENÚS</div>
               <br>
-              <img src="img/LOGO.jpg" alt="" class="logo">
-              <p></p>
+              <ul>
+                <li><a href="#qu">¿Qué son los menús?</a></li>
+                <li><a href="#bn">Menú de opciones y barra de app.</a></li>
+                <li><a href="#be">Menú contextual y modo de acción contextual.</a></li>
+                <li><a href="#beh">Menú emergente.</a></li>
+                <li><a href="#def">Definir un menú en XML.</a></li>
+              </ul>
+            <br> <br>
+              <div class="display-1" id="qu">¿Qué son los menús?</div>
+              <hr>
+
+              <p>Son un componente que encontramos comunmente en la intefaz del usuario.</p>
+              <p>Un menú presenta al usuario opciones dentro de las actividades.</p>
+              <br> <br>
+              <div class="display-1" id="bn">Menú de opciones y barra de app</div>
+              <hr>
+
+              <p>El menú de opciones es donde se encuantran los elementos principales del menú como, "Buscar", "Configuraciones","Ayuda y comentarios", etc.</p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus1.jpg" class="iu3" width="300" height="400"><br>
+              </center>
+              <br> <br>
+
+              <div class="display-1" id="be">Menú contextual y modo de acción contextual</div>
+              <hr>
+              <p>Este es menú que aparece cuando el usuario hace un click largo en un elemento.</p><br>
+              <p>Proporciona acciones que afectaran al contenido seleccionado. Como puede ser un texto que queremos copiar o una imagen que quermos descargar.</p>
+              <p>Como un ejemplo podemos observar el copiar un texto de la aplicación de Google.</p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus2.png" class="iu3" width="300" height="400"><br>
+              </center>
+              <br> <br>
+              <div class="display-1" id="beh">Menú emergente</div>
+              <hr>
+              <p>Muestra una lista de elementos en una lista vertical que está anclada a la vista que invocó el menú.</p><br>
+              <p>Sirve para proporcionar una ampliación de acciones relacionadas con contenido específico.</p>
+              <p>Las acciones en un menú emergente no deben afectar directamente al contenido correspondiente, de esto se encargan los menús contextuales</p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus3.png" class="iu3" ><br>
+              </center>
+              <br> <br>
+
+              <div class="display-1" id="def">Definir un menú en XML</div>
+              <hr>
+              <p>Ya que Android nos proporciona un formato XML estándar que permite definir los elementos de menú.</p><br>
+              <p>En lugar de incorporar un menú en el código de la actividad, debes definir un menú y todos los elementos en un recurso de menú XML.</p>
+              <p><  menu> Define un Menú, que es un contenedor para elementos como item y group.</p>
+              <p><  item> Crea un MenuItem, que representa un único elemento en un menú.</p>
+              <p><  group> Contenedor opcional e invisible para elementos item. Permite categorizar los elementos de menú para que compartan propiedades, como el estado de una actividad o visibilidad.</p>
+              <p><b>Ejemplo de menú en XML:</b></p>
+              <br>
+              <center>
+              <img src="../img/Primer_parcial/img_menus/img_menus4.png" class="iu3" width="700" height="300"><br>
+              </center>
+              <br>
+              <p>"android:icon" El ID de un recurso que es exclusivo del elemento</p>
+              <p>"android:icon" Referencia a un elemento de diseño para usar como el ícono del elemento.</p>
+              <p>"android:title" Referencia a una string para usar como el título del elemento.</p>
+              <p>"android:showAsAction" Especifica cuándo y cómo el elemento debe aparecer como un elemento de acción en la barra de app.</p>
+
+              <br> <br>
           </section>
 
 
