@@ -113,7 +113,12 @@
               <hr>
               <p>Un control de tipo Button es el botón más básico que podemos utilizar y normalmente contiene un simple texto, el usuario puede presionar o hacer clic para realizar una acción.</p>
           <center>    
-	  <img src="../img/Primer_parcial/ControlesL/cl7.png" alt=" Button">
+	  <pre>
+	  <Button android:id="@+id/BtnBotonSimple"
+        	android:text="@string/click"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" />
+	  </pre>
 	  </center>
               <br> <br>
 	  
@@ -165,7 +170,32 @@ Los TextView son propiedades de texto que nos van a permitir personalizar nuestr
 		      <br><br>
               </ul>
         <center>      
-	<img src="../img/Primer_parcial/ControlesL/cl1.jpg" alt="LinearLayout">
+	<table>
+		<tr>
+			<td>
+				<pre>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <EditText android:id="@+id/TxtDato1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:layout_weight="1" />
+ 
+    <EditText android:id="@+id/TxtDato2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:layout_weight="2" />
+ 
+</LinearLayout>
+			</pre></td><td><img src="../img/Primer_parcial/ControlesL/cl2.png" alt="LinearLayout"></td>
+		</tr>
+		</table>
 	</center>
               <br> <br>
 
