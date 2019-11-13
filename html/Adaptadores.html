@@ -111,46 +111,58 @@
         <br> <br>
 
   		<!-- CALO -->
-        
-		 <div class="display-1" id="bh">RecyclerView</div>
-		 <br>
+        <div class="display-1" id="bh">ADAPTADORES PERSONALIZADOS CON RecyclerView</div>
 		<p>Es una versión avanzada de ListView
 		Lo que hace es mostrar una lista desplazable de elementos basada en grandes conjuntos de datos
 		(datos que van a cambiar)
 		</p>
 		<div class="display-1" id="bh">Cómo se usa un RecyclerView</div>
-		 <br>
 		<p>Se debe definir un adaptador con un LayoutManager.</p>
-		<p>El adaptador acercará el modelo de datos para ser mostrados y el LayoutManager 
-		será el responsable de posicionar cada ítem dentro del RecyclerView  
-		y de decidir cuándo reciclar las vistas de items que ya no son visibles.</p>
 		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler3.JPG" width="550" height="200"></div>
-		 <br>
-		 <div class="display-1" id="bh">Crear una lista con RecyclerView</div>
+		<li>Clase Adapter: Configura el modelo de datos a ser mostrados en las vistas.(elementos)</li>
+		<li>Elemento LayoutManager: Define la posicion de los elementos (lista, cuadricula)</li> 
+		<li>Decide cuándo reciclar las vistas de items que ya no son visibles.</li>
+		</br>
+		<p>Para su presentación disponemos de las clases definidas para LayoutManager:</p>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler4.JPG" width="550" height="200"></div>
+		</br>
+		<div class="display-1" id="bh">Crear lista con RecyclerView</div>
               <hr>
-		<p>El widget RecyclerView es una versión avanzada y flexible de ListView.</p>
-		<p>
-		Se utiliza cuando nuestra aplicación necesita mostrar una lista desplazable de elementos basada en grandes conjuntos de datos (datos que cambian con frecuencia).
-		</p>
+		
 		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recyclerview1.JPG" width="250" height="450"></div>
 		
-		<li> En RecyclerView varios componentes diferentes trabajan juntos para mostrar sus datos.</li>
-		<li>El contenedor general para su interfaz de usuario es un objeto RecyclerView que agrega a su diseño.</li>
-		<li> Puede usar uno de los administradores de diseño estándar( LinearLayoutManager o GridLayoutManager).</li>
-		</br>
-		<h3>Objetos de titular de vista</h3>
-			</p>Estos objetos son instancias de una clase definida al extender RecyclerView.ViewHolder.
-				<li>Ejemplo: si una lista muestra una colección de música, cada titular de vista puede representar un solo álbum.</li>
-			</br>
-			Si el usuario cambia la dirección en la que se desplaza, los titulares de la vista que se desplazaron fuera de la pantalla se pueden traer de vuelta.
-			Los objetos del titular de la vista son administrados por un adaptador, que se crea al extender RecyclerView.Adapter. 
-			</p>
-		<h3>Agregar la biblioteca de soporte</h3>	
-		<p>Para acceder al widget RecyclerView, debe agregar las Bibliotecas de soporte de la siguiente manera.</p>
-		<p>Abrir el archivo build.gradle / Agregar la biblioteca de soporte</p>
+		<h4>1. Agregar Dependencias</h4>	
+		<p>Para acceder a RecyclerView personalizado, debe agregar las Bibliotecas de soporte (dependencia)</p>
+		<p>Abrir el archivo build.gradle / Agregar Dependencia</p>
 		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/imp_recycler.JPG" width="500" height="100"></div>
-            
+        
+		<h4>2.Diseñar layout que contenga RecyclerView</h4>
+		<p>activity_main.xml </p>
+		<p>En el layout de nuestra activity incluimos la etiqueta </p>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler5.JPG" width="500" height="150"></div>
+		
+		<h4>3.Diseñar layout para cada elemento de recyclerview</h4>
+		<p>elemento_personaje.xml </p>
+		Incluiremos campos de la lista como: imagen, nombre, descripcion.
+		Cada uno con su identificador.
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler6.JPG" width="600" height="350"></div>
+		
+		
+		<h4>4.Implementar actividad que visualice el RecyclerView</h4>
+		<p>MainActivity.java </p>
+		Se define e inicializan recyclerview y layoutManager
+		Método onCreate : inicializa el RecyclerView
+		En el método setContentView se asigna el activity_main.
+			<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler7.JPG" width="500" height="250"></div>	
+		
+		<h4>5.Crear el adaptador </h4>
+		<p>Adaptador.java </p>
+		Personalizar cada elemento de la lista  
 		<!---->
+        </br> 
+		<p>Finalmente tenemos la lista personalizada</p>
+		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler8.JPG" width="300" height="400"></div>
+		</br>
         <br> <br>
 
 		<!-- GUZMÁN-->
