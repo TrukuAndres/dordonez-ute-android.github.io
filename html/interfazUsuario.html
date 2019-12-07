@@ -1,215 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-    <title>Desarrollo de Sistemas II - Interfaz de usuario</title>
-  </head>
-  <body>
-
-          <header>
-              <div class="hero">
-                  <div class="container">
-                        <div class="display-3">
-                                INTERFAZ DE USUARIO
-                        </div>
-                  </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Desarrollo de Sistemas II - Interfaz de usuario</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="container">
+        <div class="display-3">
+          INTERFAZ DE USUARIO
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="..\index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial I
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="entorno.html">Entorno</a>
+                <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
+                <a class="dropdown-item" href="actividades.html">Actividades</a>
+                <a class="dropdown-item" href="androidmanifest.html">Android Manifest</a>
+                <a class="dropdown-item" href="intents.html">Intents</a>
+                <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
+                <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
+                <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
+                <a class="dropdown-item" href="menus.html">Menús</a>
               </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial II
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ciclo_de_vida.html">Ciclo de vida y estado</a>
+                <a class="dropdown-item" href="fragmentos.html">Fragmentos</a>
+                <a class="dropdown-item" href="webapps.html">Web Apps</a>
+                <a class="dropdown-item" href="seguridad_permisos.html">Seguridad y permisos</a>
+                <a class="dropdown-item" href="preferencias_archivos_bdd.html">Preferencias, archivos y BDD</a>
+                <a class="dropdown-item" href="hilos_asynctask.html">Hilos y Async Task</a>
+                <a class="dropdown-item" href="comunicacion_red.html">Comunicación por red</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial III
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tema 1</a>
+                <a class="dropdown-item" href="#">Tema 2</a>
+                <a class="dropdown-item" href="#">Tema 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                            <a class="navbar-brand" href="#">Menú</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
+  </header>
+  <section class="container">
+    <div class="display-4">¿Qué es?</div>
+    <hr>
+    <p>La interfaz de usuario de Android Studio es un tanto mas rígida que otros software. Pero una vez que el usuario se adapta es una interfaz amigable, y ademas cuenta con varias herramientas que hacen el trabajo mucho mas sencillo. Su pantalla
+      principal consta de varias áreas que se detallaran en esta sección.</p>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                                </li>
+    <p>La ventana principal de Android Studio, tiene las siguientes áreas.</p>
+    <ul>
+      <li><a href="#bh">Barra de herramientas</a></li>
+      <li><a href="#bn">Barra de navegación</a></li>
+      <li><a href="#ve">Ventana del editor</a></li>
+      <li><a href="#bvh">Barra de la ventana de las herramientas</a></li>
+      <li><a href="#vh">Ventana de herramientas</a></li>
+      <li><a href="#be">Barra de estado</a></li>
+    </ul>
+    <center>
+      <img src="../img/Primer_parcial/iu_1.png " alt="Ventana principal" class="img-fluid">
+    </center>
+    <br> <br>
 
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Parcial I
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="entorno.html">Entorno</a>
-                                    <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
-                                    <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
-                                    <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
-                                    <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
-                                    <a class="dropdown-item" href="menus.html">Menús</a>
-                                  </div>
-                                </li>
+    <div class="display-1" id="bh">Barra de herramientas</div>
+    <hr>
+    <p>Esta herramienta permite realizar muchas acciones importantes referentes a la complicación de la app. A la compilación del emulador, opciones de copiar, pegar, guardar, etc.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_2.png" alt="Barra de herramientas" class="img-fluid">
+    </center>
+    <br> <br>
 
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Parcial II
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Tema 1</a>
-                                          <a class="dropdown-item" href="#">Tema 2</a>
-                                          <a class="dropdown-item" href="#">Tema 3</a>
-                                        </div>
-                                      </li>
+    <div class="display-1" id="bh1">Configuración Run/Debug</div>
+    <hr>
+    <p>Esta herramienta permite realizar la configuración de la version de apk y el lanzador.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_8.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-                                      <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Parcial III
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              <a class="dropdown-item" href="#">Tema 1</a>
-                                              <a class="dropdown-item" href="#">Tema 2</a>
-                                              <a class="dropdown-item" href="#">Tema 3</a>
-                                            </div>
-                                          </li>
-                              </ul>
-                            </div>
-                    </div>
+    <div class="display-1" id="bh2">Dispositivos virtuales</div>
+    <hr>
+    <p>Esta herramienta crear los emuladores que permitiran ejecutar una version de Android y ejecutar la aplicación.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_9.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-                      </nav>
-          </header>
-          <section class="container">
-              <div class="display-4">¿Qué es?</div>
-              <hr>
-              <p>La interfaz de usuario de Android Studio es un tanto mas rígida que otros software. Pero una vez que el usuario se adapta es una interfaz amigable, y ademas cuenta con varias herramientas que hacen el trabajo mucho mas sencillo. Su pantalla principal consta de varias áreas que se detallaran en esta sección.</p>
+    <div class="display-1" id="bh3">Selección de Hardware</div>
+    <hr>
+    <p>Permite seleccionar el dispositivo a emular, donde existen varios tamaños de pantalla.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_10.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-              <p>La ventana principal de Android Studio, tiene las siguientes áreas.</p>
-              <ul>
-                  <li><a href="#bh">Barra de herramientas</a></li>
-                  <li><a href="#bn">Barra de navegación</a></li>
-                  <li><a href="#ve">Ventana del editor</a></li>
-                  <li><a href="#bvh">Barra de la ventana de las herramientas</a></li>
-                  <li><a href="#vh">Ventana de herramientas</a></li>
-                  <li><a href="#be">Barra de estado</a></li>
-              </ul>
-            <center>
-              <img src="../img/Primer_parcial/iu_1.png " alt="Ventana principal" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="bh4">Selección de Sistema Emulado</div>
+    <hr>
+    <p>Permite seleccionar la version de API que emulara el dispositivo.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_11.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-              <div class="display-1" id="bh">Barra de herramientas</div>
-              <hr>
-              <p>Esta herramienta permite realizar muchas acciones importantes referentes a la complicación de la app. A la compilación del emulador, opciones de copiar, pegar, guardar, etc.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_2.png" alt="Barra de herramientas" class="img-fluid">
-            </center>
-              <br> <br>
-		
-		<div class="display-1" id="bh1">Configuración Run/Debug</div>
-              <hr>
-              <p>Esta herramienta permite realizar la configuración de la version de apk y el lanzador.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_8.png" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="bh5">Verificación de configuración Virtuales</div>
+    <hr>
+    <center>
+      <img src="../img/Primer_parcial/iu_12.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-		<div class="display-1" id="bh2">Dispositivos virtuales</div>
-              <hr>
-              <p>Esta herramienta crear los emuladores que permitiran ejecutar una version de Android y ejecutar la aplicación.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_9.png" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="bh6">Dispositivos Virtuales</div>
+    <hr>
+    <center>
+      <img src="../img/Primer_parcial/iu_13.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-		<div class="display-1" id="bh3">Selección de Hardware</div>
-              <hr>
-              <p>Permite seleccionar el dispositivo a emular, donde existen varios tamaños de pantalla.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_10.png" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="bh7">Dispositivos Emulado</div>
+    <hr>
+    <center>
+      <img src="../img/Primer_parcial/iu_15.png" class="img-fluid">
+      <img src="../img/Primer_parcial/iu_16.png" class="img-fluid">
+      <img src="../img/Primer_parcial/iu_17.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-		<div class="display-1" id="bh4">Selección de Sistema Emulado</div>
-              <hr>
-              <p>Permite seleccionar la version de API que emulara el dispositivo.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_11.png" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="bn">Barra de navegación</div>
+    <hr>
+    <p>Esta barra esta debajo de la barra de herramientas o bien a un lado como en la primer imagen, se usa para navegar en su proyecto. Puede abrir archivos para editarlos, o las diversas carpetas. Si se da clic sobre alguna de las rutas aparecen
+      las opciones de archivos que tiene esa ruta, por lo que es muy sencillo navegar.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_3.png" alt="Barra de navegación" class="img-fluid">
+    </center>
+    <br> <br>
 
-	<div class="display-1" id="bh5">Verificación de configuración Virtuales</div>
-              <hr>
-		<center>  
-            <img src="../img/Primer_parcial/iu_12.png" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="ve">Ventana del editor</div>
+    <hr>
+    <p>Es donde se escribe el código tanto xml, java o Kotlin. Aquí también se encuentra la vista previa de la app. En esta sección, puede escribir su código. Aquí es donde se abren todos los archivos, para que los pueda editar. Es posible abrir
+      múltiples archivos. Además puede ver los archivos XML, con una vista previa en un celular, el cual puede elegir su resolución y demás parámetros.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_4.png" alt="Ventana del editor" class="img-fluid" width="1100px">
+    </center>
+    <br> <br>
 
-		<div class="display-1" id="bh6">Dispositivos Virtuales</div>
-              <hr>
-		<center>  
-            <img src="../img/Primer_parcial/iu_13.png" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="bvh">Barra de la ventana de las herramientas</div>
+    <hr>
+    <p>Se encuentra en el lateral izquierdo de la pantalla, esta contiene varias herramientas individuales que se pueden expandir o contraer según se requiera. Aquí se puede ocultar por ejemplo la ventana de Proyecto, para poder trabajar con más
+      espacio en el código, es decir, en la ventana del editor.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_5.png" alt="Barra de la ventana de las herramientas" class="img-fluid" width="900px">
+    </center>
+    <br> <br>
 
-	<div class="display-1" id="bh7">Dispositivos Emulado</div>
-              <hr>
-		<center>  
-            	<img src="../img/Primer_parcial/iu_15.png" class="img-fluid">
-		<img src="../img/Primer_parcial/iu_16.png" class="img-fluid">
-		<img src="../img/Primer_parcial/iu_17.png" class="img-fluid">
-            </center>
-              <br> <br>
-		
-              <div class="display-1" id="bn">Barra de navegación</div>
-              <hr>
-              <p>Esta barra esta debajo de la barra de herramientas o bien a un lado como en la primer imagen, se usa para navegar en su proyecto. Puede abrir archivos para editarlos, o las diversas carpetas. Si se da clic sobre alguna de las rutas aparecen las opciones de archivos que tiene esa ruta, por lo que es muy sencillo navegar.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_3.png" alt="Barra de navegación" class="img-fluid">
-            </center>
-              <br> <br>
+    <div class="display-1" id="vh">Ventana de herramientas</div>
+    <hr>
+    <p>En esta ventana se puede acceder a tareas especificas. Aquí están las carpetas y archivos de su proyecto. Así como mensajes, el estado de compilación, el logcat, etc. Se puede expandir y contraer según lo requiera. En general las herramientas
+      que tiene esta ventana, muestran mensajes.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_6.png" alt="Ventana de herramientas" class="img-fluid">
+    </center>
+    <br> <br>
 
-              <div class="display-1" id="ve">Ventana del editor</div>
-              <hr>
-              <p>Es donde se escribe el código tanto xml, java o Kotlin. Aquí también se encuentra la vista previa de la app. En esta sección, puede escribir su código. Aquí es donde se abren todos los archivos, para que los pueda editar. Es posible abrir múltiples archivos. Además puede ver los archivos XML, con una vista previa en un celular, el cual puede elegir su resolución y demás parámetros.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_4.png" alt="Ventana del editor" class="img-fluid" width="1100px">
-            </center>
-              <br> <br>
+    <div class="display-1" id="be">Barra de estado</div>
+    <hr>
+    <p>Es una barra se encuentra en la parte inferior de la pantalla. Esta indica el estado actual de tu proyecto, así como mensajes o advertencias. Simplemente es un lugar que se usa para que veas el estado de alguna tarea o identifique el estado de
+      tu proyecto.</p>
+    <center>
+      <img src="../img/Primer_parcial/iu_7.png" alt="Barra de estado" class="img-fluid">
+    </center>
+    <br><br>
 
-              <div class="display-1" id="bvh">Barra de la ventana de las herramientas</div>
-              <hr>
-              <p>Se encuentra en el lateral izquierdo de la pantalla, esta contiene varias herramientas individuales que se pueden expandir o contraer según se requiera. Aquí se puede ocultar por ejemplo la ventana de Proyecto, para poder trabajar con más espacio en el código, es decir, en la ventana del editor.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_5.png" alt="Barra de la ventana de las herramientas" class="img-fluid" width="900px">
-            </center>
-              <br> <br>
+  </section>
 
-              <div class="display-1" id="vh">Ventana de herramientas</div>
-              <hr>
-              <p>En esta ventana se puede acceder a tareas especificas. Aquí están las carpetas y archivos de su proyecto. Así como mensajes, el estado de compilación, el logcat, etc. Se puede expandir y contraer según lo requiera. En general las herramientas que tiene esta ventana, muestran mensajes.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_6.png" alt="Ventana de herramientas" class="img-fluid">
-            </center>
-              <br> <br>
-
-              <div class="display-1" id="be">Barra de estado</div>
-              <hr>
-              <p>Es una barra se encuentra en la parte inferior de la pantalla. Esta indica el estado actual de tu proyecto, así como mensajes o advertencias. Simplemente es un lugar que se usa para que veas el estado de alguna tarea o identifique el estado de tu proyecto.</p>
-            <center>  
-            <img src="../img/Primer_parcial/iu_7.png" alt="Barra de estado" class="img-fluid">
-            </center>
-              <br><br>
-
-
-
-
-
-          </section>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,283 +1,283 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-    <title>Desarrollo de Sistemas II - Menús</title>
-  </head>
-  <body>
-
-          <header>
-              <div class="hero">
-                  <div class="container">
-                        <div class="display-3">
-                                MENÚS
-                        </div>
-                  </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Desarrollo de Sistemas II - Menús</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="container">
+        <div class="display-3">
+          MENÚS
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="..\index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial I
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="entorno.html">Entorno</a>
+                <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
+                <a class="dropdown-item" href="actividades.html">Actividades</a>
+                <a class="dropdown-item" href="androidmanifest.html">Android Manifest</a>
+                <a class="dropdown-item" href="intents.html">Intents</a>
+                <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
+                <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
+                <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
+                <a class="dropdown-item" href="menus.html">Menús</a>
               </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial II
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ciclo_de_vida.html">Ciclo de vida y estado</a>
+                <a class="dropdown-item" href="fragmentos.html">Fragmentos</a>
+                <a class="dropdown-item" href="webapps.html">Web Apps</a>
+                <a class="dropdown-item" href="seguridad_permisos.html">Seguridad y permisos</a>
+                <a class="dropdown-item" href="preferencias_archivos_bdd.html">Preferencias, archivos y BDD</a>
+                <a class="dropdown-item" href="hilos_asynctask.html">Hilos y Async Task</a>
+                <a class="dropdown-item" href="comunicacion_red.html">Comunicación por red</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial III
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tema 1</a>
+                <a class="dropdown-item" href="#">Tema 2</a>
+                <a class="dropdown-item" href="#">Tema 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                            <a class="navbar-brand" href="#">Menú</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
+  </header>
+  <section class="container">
+    <div class="display-4">MENÚS</div>
+    <br>
+    <ul>
+      <li><a href="#qu">¿Qué son los menús?</a></li>
+      <li><a href="#bn">Menú de opciones y barra de app.</a></li>
+      <li><a href="#be">Menú contextual y modo de acción contextual.</a></li>
+      <li><a href="#beh">Menú emergente.</a></li>
+      <li><a href="#def">Definir un menú en XML.</a></li>
+      <li><a href="#defs">Crear de un submenú en XML.</a></li>
+      <li><a href="#mo">Crear un menú de opciones.</a></li>
+      <li><a href="#cl">Manejar eventos de clic.</a></li>
+      <li><a href="#mc">Crear menús contextuales.</a></li>
+      <li><a href="#mcf">Menú contextual flotante.</a></li>
+      <li><a href="#mcmac">Modo de acción contextual.</a></li>
+      <li><a href="#me">Cómo crear un menú emergente.</a></li>
+    </ul>
+    <br> <br>
+    <div class="display-1" id="qu">¿Qué son los menús?</div>
+    <hr>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                                </li>
+    <p>Son un componente que encontramos comunmente en la intefaz del usuario.</p>
+    <p>Un menú presenta al usuario opciones dentro de las actividades.</p>
+    <br> <br>
+    <div class="display-1" id="bn">Menú de opciones y barra de app</div>
+    <hr>
 
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Parcial I
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="entorno.html">Entorno</a>
-                                    <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
-                                    <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
-                                    <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
-                                    <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
-                                    <a class="dropdown-item" href="menus.html">Menús</a>
-                                  </div>
-                                </li>
+    <p>El menú de opciones es donde se encuentran los elementos principales del menú como, "Buscar", "Configuraciones","Ayuda y comentarios", etc.</p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus1.jpg" class="img-fluid" width="300" height="400"><br>
+    </center>
+    <br> <br>
 
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Parcial II
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Tema 1</a>
-                                          <a class="dropdown-item" href="#">Tema 2</a>
-                                          <a class="dropdown-item" href="#">Tema 3</a>
-                                        </div>
-                                      </li>
+    <div class="display-1" id="be">Menú contextual y modo de acción contextual</div>
+    <hr>
+    <p>Este es el menú que aparece cuando el usuario hace un click largo en un elemento.</p><br>
+    <p>Proporciona acciones que afectarán al contenido seleccionado. Como puede ser un texto que queremos copiar o una imagen que queremos descargar.</p>
+    <p>Como un ejemplo podemos observar el copiar un texto de la aplicación de Google.</p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus2.png" class="img-fluid" width="300" height="400"><br>
+    </center>
+    <br> <br>
+    <div class="display-1" id="beh">Menú emergente</div>
+    <hr>
+    <p>Muestra una lista de elementos en una lista vertical que está anclada a la vista que invocó el menú.</p><br>
+    <p>Sirve para proporcionar una ampliación de acciones relacionadas con contenido específico.</p>
+    <p>Las acciones en un menú emergente no deben afectar directamente al contenido correspondiente, de esto se encargan los menús contextuales</p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus3.png" class="img-fluid"><br>
+    </center>
+    <br> <br>
 
-                                      <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Parcial III
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              <a class="dropdown-item" href="#">Tema 1</a>
-                                              <a class="dropdown-item" href="#">Tema 2</a>
-                                              <a class="dropdown-item" href="#">Tema 3</a>
-                                            </div>
-                                          </li>
-                              </ul>
-                            </div>
-                    </div>
+    <div class="display-1" id="def">Definir un menú en XML</div>
+    <hr>
+    <p>Ya que Android nos proporciona un formato XML estándar que permite definir los elementos de un menú.</p><br>
+    <p>En lugar de incorporar un menú en el código de la actividad, debes definir un menú y todos los elementos en un recurso de menú XML.</p>
+    <p>
+      < menu> Define un Menú, que es un contenedor para elementos como item y group.
+    </p>
+    <p>
+      < item> Crea un MenuItem, que representa un único elemento en un menú.
+    </p>
+    <p>
+      < group> Contenedor opcional e invisible para elementos item. Permite categorizar los elementos de menú para que compartan propiedades, como el estado de una actividad o visibilidad.
+    </p>
+    <p><b>Ejemplo de menú en XML:</b></p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus4.png" class="img-fluid" width="700" height="300"><br>
+    </center>
+    <br>
+    <p>"android:icon" El ID de un recurso que es exclusivo del elemento</p>
+    <p>"android:icon" Referencia a un elemento de diseño para usar como el ícono del elemento.</p>
+    <p>"android:title" Referencia a una string para usar como el título del elemento.</p>
+    <p>"android:showAsAction" Especifica cuándo y cómo el elemento debe aparecer como un elemento de acción en la barra de app.</p>
 
-                      </nav>
-          </header>
-          <section class="container">
-              <div class="display-4">MENÚS</div>
-              <br>
-              <ul>
-                <li><a href="#qu">¿Qué son los menús?</a></li>
-                <li><a href="#bn">Menú de opciones y barra de app.</a></li>
-                <li><a href="#be">Menú contextual y modo de acción contextual.</a></li>
-                <li><a href="#beh">Menú emergente.</a></li>
-                <li><a href="#def">Definir un menú en XML.</a></li>
-                <li><a href="#defs">Crear de un submenú en XML.</a></li>
-                <li><a href="#mo">Crear un menú de opciones.</a></li>
-                <li><a href="#cl">Manejar eventos de clic.</a></li>
-                <li><a href="#mc">Crear menús contextuales.</a></li>
-                <li><a href="#mcf">Menú contextual flotante.</a></li>
-                <li><a href="#mcmac">Modo de acción contextual.</a></li>
-                <li><a href="#me">Cómo crear un menú emergente.</a></li>
-                
-              </ul>
-            <br> <br>
-              <div class="display-1" id="qu">¿Qué son los menús?</div>
-              <hr>
+    <br> <br>
+    <div class="display-1" id="defs">Crear de un submenú en XML</div>
+    <hr>
+    <p>Estos submenús son necesarios cuando la aplicacíon posee mas elementos desplegables</p>
+    <p>Para la definición de un submenú en XML basta con definir un menú dentro de un item del menú principal.</p>
+    <p><b>Hay que recordar que no se puede ingresar un submenú dentro de otro submenú.</b></p>
 
-              <p>Son un componente que encontramos comunmente en la intefaz del usuario.</p>
-              <p>Un menú presenta al usuario opciones dentro de las actividades.</p>
-              <br> <br>
-              <div class="display-1" id="bn">Menú de opciones y barra de app</div>
-              <hr>
+    <p><b>Ejemplo de submenú en XML:</b></p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus5.png" class="img-fluid" width="700" height="300"><br>
+    </center>
+    <br><br>
+    <div class="display-1" id="mo">Crear un menú de opciones</div>
+    <hr>
+    <p>Como miramos antes en este menú debemos ingresar opciones relevantes para el contexto actual</p>
+    <p>Para especificar el menú de opciones para una actividad, se sobreescribe el método onCreateOptionsMenu() utilizando la notación @Override</p>
+    <p>En esta parte podemos agrandar el recurso de menú que definimos en el XML</p>
+    <p><b>Ejemplo de sobreescritura del método onCreateOptionsMenu()</b></p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus6.png" class="img-fluid" width="700" height="300"><br>
+    </center>
+    <br><br>
 
-              <p>El menú de opciones es donde se encuentran los elementos principales del menú como, "Buscar", "Configuraciones","Ayuda y comentarios", etc.</p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus1.jpg" class="img-fluid" width="300" height="400"><br>
-              </center>
-              <br> <br>
+    <div class="display-1" id="cl">Manejar eventos de clic</div>
+    <hr>
+    <p>Cuando el usuario selecciona un elemento del menú de opciones el sistema llama al método onOptionsItemSelected() de la actividad. Este elemento pasa al MenuItem seleccionado.</p>
+    <p>Utilizando getItemId() podemos hacer coincidir este ID con elementos de menú conocidos para realizar la acción.</p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus7.png" class="img-fluid" width="700" height="300"><br>
+    </center>
+    <br><br>
 
-              <div class="display-1" id="be">Menú contextual y modo de acción contextual</div>
-              <hr>
-              <p>Este es el menú que aparece cuando el usuario hace un click largo en un elemento.</p><br>
-              <p>Proporciona acciones que afectarán al contenido seleccionado. Como puede ser un texto que queremos copiar o una imagen que queremos descargar.</p>
-              <p>Como un ejemplo podemos observar el copiar un texto de la aplicación de Google.</p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus2.png" class="img-fluid" width="300" height="400"><br>
-              </center>
-              <br> <br>
-              <div class="display-1" id="beh">Menú emergente</div>
-              <hr>
-              <p>Muestra una lista de elementos en una lista vertical que está anclada a la vista que invocó el menú.</p><br>
-              <p>Sirve para proporcionar una ampliación de acciones relacionadas con contenido específico.</p>
-              <p>Las acciones en un menú emergente no deben afectar directamente al contenido correspondiente, de esto se encargan los menús contextuales</p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus3.png" class="img-fluid" ><br>
-              </center>
-              <br> <br>
+    <div class="display-1" id="mc">Crear menús contextuales</div>
+    <hr>
+    <p>Como indicamos antes el menú contextual brinda acciones que afectan a un elemento del marco contextual específico.</p>
+    <p>Estos menús pueden ser:</p>
+    <ul>
+      <li>Menú contextual flotante.</li>
+      <li>Modo de acción contextual.</li>
+    </ul>
+    <p><b>Ejemplo de los dos tipos de menú contextual. A la derecha menú contextual flotante y a la izquierda modo de acción contextual.</b></p>
+    <br>
+    <center>
+      <img src="../img/Primer_parcial/img_menus/img_menus8.png" class="img-fluid" width="400" height="400"><br>
+    </center>
+    <br><br>
+    <div class="display-1" id="mcf">Menú contextual flotante</div>
+    <hr>
+    <p>En este caso un menú aparece como una lista flotante de elementos del menú, es muy similar a un cuadro de dialogo.</p>
+    <p>A diferencia del "modo de acción contextual" aqui solo se admite un valor contextual.</p>
+    <p>Pasos para crear un menú contextual flotante<p>
+        <p><b>1</b> Registra la View con la que se debe asociar el menú contextual llamando a registerForContextMenu() y pásalo a la View.</p>
+        <p><b>2</b> Implementar el método onCreateContextMenu() en Activity.</p>
+        <br>
+        <center>
+          <img src="../img/Primer_parcial/img_menus/img_menus9.png" class="img-fluid" width="700" height="300"><br>
+          <br><br>
+        </center>
 
-              <div class="display-1" id="def">Definir un menú en XML</div>
-              <hr>
-              <p>Ya que Android nos proporciona un formato XML estándar que permite definir los elementos de un menú.</p><br>
-              <p>En lugar de incorporar un menú en el código de la actividad, debes definir un menú y todos los elementos en un recurso de menú XML.</p>
-              <p><  menu> Define un Menú, que es un contenedor para elementos como item y group.</p>
-              <p><  item> Crea un MenuItem, que representa un único elemento en un menú.</p>
-              <p><  group> Contenedor opcional e invisible para elementos item. Permite categorizar los elementos de menú para que compartan propiedades, como el estado de una actividad o visibilidad.</p>
-              <p><b>Ejemplo de menú en XML:</b></p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus4.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br>
-              <p>"android:icon" El ID de un recurso que es exclusivo del elemento</p>
-              <p>"android:icon" Referencia a un elemento de diseño para usar como el ícono del elemento.</p>
-              <p>"android:title" Referencia a una string para usar como el título del elemento.</p>
-              <p>"android:showAsAction" Especifica cuándo y cómo el elemento debe aparecer como un elemento de acción en la barra de app.</p>
+        <p><b>3</b> Implementa onContextItemSelected().</p>
+        <center>
+          <img src="../img/Primer_parcial/img_menus/img_menus10.png" class="img-fluid" width="700" height="300"><br>
+        </center>
+        <br><br>
 
-              <br> <br>
-            <div class="display-1" id="defs">Crear de un submenú en XML</div>
-              <hr>
-              <p>Estos submenús son necesarios cuando la aplicacíon posee mas elementos desplegables</p>
-              <p>Para la definición de un submenú en XML basta con definir un menú dentro de un item del menú principal.</p>
-              <p><b>Hay que recordar que no se puede ingresar un submenú dentro de otro submenú.</b></p>
+        <div class="display-1" id="mcmac">Modo de acción contextual</div>
+        <hr>
+        <p>En este caso no aparece una lista flotante sino que se selecciona a un contexto y en la parte superior aparecera una barra de acciones contextuales.</p>
+        <p>En este modo el usuario puede seleccionar varios elementos, como ejemplo seleccionar varios mensajes en la aplicación Whatsaap para eliminarlos.</p>
+        <p>Podemos crear modos de acción individuales o grupales.<p>
 
-              <p><b>Ejemplo de submenú en XML:</b></p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus5.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br><br>
-              <div class="display-1" id="mo">Crear un menú de opciones</div>
-              <hr>
-              <p>Como miramos antes en este menú debemos ingresar opciones relevantes para el contexto actual</p>
-              <p>Para especificar el menú de opciones para una actividad, se sobreescribe el método onCreateOptionsMenu() utilizando la notación @Override</p>
-              <p>En esta parte podemos agrandar el recurso de menú que definimos en el XML</p>
-              <p><b>Ejemplo de sobreescritura del método onCreateOptionsMenu()</b></p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus6.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br><br>
+            <p><b>Pasos para crear modo de acción contextual para vistas individuales.</b></p>
+            <p><b>1</b> Implementa la interfaz ActionMode.Callback. En los métodos de devolución de llamada se puede especificar las acciones de la barra de acciones contextuales,
+              responder a eventos de clic en elementos de acción o manejar otros eventos del ciclo de vida para el modo de acción.</p>
 
-              <div class="display-1" id="cl">Manejar eventos de clic</div>
-              <hr>
-              <p>Cuando el usuario selecciona un elemento del menú de opciones el sistema llama al método onOptionsItemSelected() de la actividad. Este elemento pasa al MenuItem seleccionado.</p>
-              <p>Utilizando getItemId() podemos hacer coincidir este ID con elementos de menú conocidos para realizar la acción.</p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus7.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br><br>
-
-              <div class="display-1" id="mc">Crear menús contextuales</div>
-              <hr>
-              <p>Como indicamos antes el menú contextual brinda acciones que afectan a un elemento del marco contextual específico.</p>
-              <p>Estos menús pueden ser:</p>
-              <ul>
-                <li >Menú contextual flotante.</li>
-                <li >Modo de acción contextual.</li>
-              </ul>
-              <p><b>Ejemplo de los dos tipos de menú contextual. A la derecha menú contextual flotante y a la izquierda modo de acción contextual.</b></p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus8.png" class="img-fluid"  width="400" height="400" ><br>
-              </center>
-              <br><br>
-             <div class="display-1" id="mcf">Menú contextual flotante</div>
-              <hr>
-              <p>En este caso un menú aparece como una lista flotante de elementos del menú, es muy similar a un cuadro de dialogo.</p>
-              <p>A diferencia del "modo de acción contextual" aqui solo se admite un valor contextual.</p>
-              <p>Pasos para crear un menú contextual flotante<p>
-              <p><b>1</b> Registra la View con la que se debe asociar el menú contextual llamando a registerForContextMenu() y pásalo a la View.</p>
-              <p><b>2</b> Implementar el método onCreateContextMenu() en Activity.</p>
-              <br>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus9.png" class="img-fluid" width="700" height="300"><br>
-              <br><br>
-              </center>
-
-              <p><b>3</b> Implementa onContextItemSelected().</p>
-              <center>
-              <img src="../img/Primer_parcial/img_menus/img_menus10.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br><br>
-
-              <div class="display-1" id="mcmac">Modo de acción contextual</div>
-              <hr>
-              <p>En este caso no aparece una lista flotante sino que se selecciona a un contexto y en la parte superior aparecera una barra de acciones contextuales.</p>
-              <p>En este modo el usuario puede seleccionar varios elementos, como ejemplo seleccionar varios mensajes en la aplicación Whatsaap para eliminarlos.</p>
-              <p>Podemos crear modos de acción individuales o grupales.<p>
-
-              <p><b>Pasos para crear modo de acción contextual para vistas individuales.</b></p>
-              <p><b>1</b> Implementa la interfaz ActionMode.Callback. En los métodos de devolución de llamada se puede especificar las acciones de la barra de acciones contextuales,
-                responder a eventos de clic en elementos de acción o manejar otros eventos del ciclo de vida para el modo de acción.</p>
-
-              <br>
-              <center>
+            <br>
+            <center>
               <img src="../img/Primer_parcial/img_menus/img_menus11.png" class="img-fluid" width="700" height="700"><br>
               <br><br>
-              </center>
+            </center>
 
-              <p><b>2</b> Llamar a startActionMode() cuando se desee mostrar la barra.</p>
-              <center>
+            <p><b>2</b> Llamar a startActionMode() cuando se desee mostrar la barra.</p>
+            <center>
               <img src="../img/Primer_parcial/img_menus/img_menus12.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br><br>
-              <p><b>Pasos para habilitar acciones contextuales por lotes en una ListView o GridView.</b></p>
-              <p><b>1</b> Implementa la interfaz AbsListView.MultiChoiceModeListener y establécela para la vista de grupo con setMultiChoiceModeListener().</p>
+            </center>
+            <br><br>
+            <p><b>Pasos para habilitar acciones contextuales por lotes en una ListView o GridView.</b></p>
+            <p><b>1</b> Implementa la interfaz AbsListView.MultiChoiceModeListener y establécela para la vista de grupo con setMultiChoiceModeListener().</p>
 
-              <p><b>2</b> Llama a setChoiceMode() con el argumento CHOICE_MODE_MULTIPLE_MODAL.</p>
-              <br>
-              <center>
+            <p><b>2</b> Llama a setChoiceMode() con el argumento CHOICE_MODE_MULTIPLE_MODAL.</p>
+            <br>
+            <center>
               <img src="../img/Primer_parcial/img_menus/img_menus13.png" class="img-fluid" width="700" height="700"><br>
-              </center>
-              <br><br>
+            </center>
+            <br><br>
 
-              <div class="display-1" id="me">Cómo crear un menú emergente</div>
-              <hr>
-              <p>Tambien conocido como PopUp es un menú anclado a una View.</p><br>
-              <p>Proporcionar un menú de estilo de ampliación para las acciones que se relacionan con contenido específico .</p>
-              <p><b>Pasos para crear un PopUp</b></p>
-              <p><b>1</b> Crear una instancia de PopupMenu con su constructor, que toma el Context de la aplicación actual y la View a la que debe anclarse el menú.</p>
-              <p><b>2</b> Usa MenuInflater para inflar el recurso de menú hacia el objeto Menú devuelto por PopupMenu.getMenu(). Llama a PopupMenu.show()</p>
-              <br>
-              <p><b>Ejemplo botón XML con atributo onClick que muestra un menú emergente:</b></p>
-              <center>
+            <div class="display-1" id="me">Cómo crear un menú emergente</div>
+            <hr>
+            <p>Tambien conocido como PopUp es un menú anclado a una View.</p><br>
+            <p>Proporcionar un menú de estilo de ampliación para las acciones que se relacionan con contenido específico .</p>
+            <p><b>Pasos para crear un PopUp</b></p>
+            <p><b>1</b> Crear una instancia de PopupMenu con su constructor, que toma el Context de la aplicación actual y la View a la que debe anclarse el menú.</p>
+            <p><b>2</b> Usa MenuInflater para inflar el recurso de menú hacia el objeto Menú devuelto por PopupMenu.getMenu(). Llama a PopupMenu.show()</p>
+            <br>
+            <p><b>Ejemplo botón XML con atributo onClick que muestra un menú emergente:</b></p>
+            <center>
               <img src="../img/Primer_parcial/img_menus/img_menus14.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br>
-              <p><b>Mostrar menú emergente desde una actividad:</b></p>
-              <center>
+            </center>
+            <br>
+            <p><b>Mostrar menú emergente desde una actividad:</b></p>
+            <center>
               <img src="../img/Primer_parcial/img_menus/img_menus15.png" class="img-fluid" width="700" height="300"><br>
-              </center>
-              <br> <br>
+            </center>
+            <br> <br>
 
-              
-             
-          </section>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

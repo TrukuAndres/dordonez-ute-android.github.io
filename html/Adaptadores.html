@@ -1,234 +1,232 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-    <title>Desarrollo de Sistemas II - Adaptadores</title>
-  </head>
-  <body>
-
-          <header>
-              <div class="hero">
-                  <div class="container">
-                        <div class="display-3">
-                               ADAPTADORES
-                        </div>
-                  </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Desarrollo de Sistemas II - Adaptadores</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="container">
+        <div class="display-3">
+          ADAPTADORES
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="..\index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial I
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="entorno.html">Entorno</a>
+                <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
+                <a class="dropdown-item" href="actividades.html">Actividades</a>
+                <a class="dropdown-item" href="androidmanifest.html">Android Manifest</a>
+                <a class="dropdown-item" href="intents.html">Intents</a>
+                <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
+                <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
+                <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
+                <a class="dropdown-item" href="menus.html">Menús</a>
               </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial II
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ciclo_de_vida.html">Ciclo de vida y estado</a>
+                <a class="dropdown-item" href="fragmentos.html">Fragmentos</a>
+                <a class="dropdown-item" href="webapps.html">Web Apps</a>
+                <a class="dropdown-item" href="seguridad_permisos.html">Seguridad y permisos</a>
+                <a class="dropdown-item" href="preferencias_archivos_bdd.html">Preferencias, archivos y BDD</a>
+                <a class="dropdown-item" href="hilos_asynctask.html">Hilos y Async Task</a>
+                <a class="dropdown-item" href="comunicacion_red.html">Comunicación por red</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial III
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tema 1</a>
+                <a class="dropdown-item" href="#">Tema 2</a>
+                <a class="dropdown-item" href="#">Tema 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                            <a class="navbar-brand" href="#">Menú</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
+  </header>
+  <section class="container">
+    <div class="display-4">ADAPTADORES</div>
+    <br>
+    <div class="display-1" id="bh">Diseños</div>
+    <hr>
+    <p> Todos los elementos del diseño se crear usando una jerarquía de objetos View y ViewGroup. Una View suele mostrar un elemento que el usuario puede ver y con el que puede interactuar. Por su parte, ViewGroup es un contenedor invisible que
+      define la estructura de diseño de View y otros objetos ViewGroup</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/Diseño_1.png" class="img-fluid">
+    </center>
+    <br>
+    <h3>Atributos</h3>
+    <p>Cada objeto View y ViewGroup admite su propia variedad de atributos XML. Algunos atributos son específicos de un objeto View (por ejemplo, TextView admite el atributo textSize), aunque estos atributos también son heredados por cualquier objeto
+      View que pueda extender esta clase. Algunos son comunes para todos los objetos View, porque se heredan de la clase raíz View (como el atributo id).</p>
+    <p>El símbolo arroba (@) al comienzo de la string indica que el analizador de XML debe analizar y expandir el resto de la string de ID e identificarla como un recurso de ID. El símbolo más (+) significa que es un nuevo nombre de recurso que se
+      debe crear y agregar a nuestros recursos (en el archivo R.java).</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/Diseño_2.png" class="img-fluid"><br>
+    </center>
+    <br>
+    <p>Luego, crear una instancia del objeto View y capturarla desde el diseño (generalmente en el método onCreate())</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/Diseño_3.png" class="img-fluid"><br>
+    </center>
+    <br>
+    <h3>Creación de diseños con un adaptador</h3>
+    <p>Cuando el contenido del diseño sea dinámico o no sea predeterminado, se puede usar un diseño con la subclase AdapterView para completar el diseño con vistas durante el tiempo de ejecución. Una subclase de la clase AdapterView usa un Adapter
+      para enlazar datos con el diseño. Adapter se comporta como intermediario entre la fuente de datos y el diseño AdapterView; Adapter recupera los datos (de una fuente como una matriz o una consulta a la base de datos) y convierte cada entrada en
+      una vista que puedes agregar al diseño AdapterView.</p>
+    <p>Los diseños comunes respaldados por un adaptador incluyen:</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/Diseño_4.png" class="img-fluid">
+    </center>
+    <br> <br>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                                </li>
+    <div class="display-1" id="bh">ADAPTADORES PERSONALIZADOS CON RecyclerView</div>
+    <p>Es una versión avanzada de ListView
+      Lo que hace es mostrar una lista desplazable de elementos basada en grandes conjuntos de datos
+      (datos que van a cambiar)
+    </p>
+    <div class="display-1" id="bh">Cómo se usa un RecyclerView</div>
+    <p>Se debe definir un adaptador con un LayoutManager.</p>
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler3.jpg" width="550" height="200" class="img-fluid"></div>
+    <li>Clase Adapter: Configura el modelo de datos a ser mostrados en las vistas.(elementos)</li>
+    <li>Elemento LayoutManager: Define la posicion de los elementos (lista, cuadricula)</li>
+    <li>Decide cuándo reciclar las vistas de items que ya no son visibles.</li>
+    </br>
+    <p>Para su presentación disponemos de las clases definidas para LayoutManager:</p>
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler4.jpg" width="550" height="200" class="img-fluid"></div>
+    </br>
+    <div class="display-1" id="bh">Crear lista con RecyclerView</div>
+    <hr>
 
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Parcial I
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="entorno.html">Entorno</a>
-                                    <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
-                                    <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
-                                    <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
-                                    <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
-                                    <a class="dropdown-item" href="menus.html">Menús</a>
-                                  </div>
-                                </li>
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recyclerview1.jpg" width="250" height="450" class="img-fluid"></div>
 
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Parcial II
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Tema 1</a>
-                                          <a class="dropdown-item" href="#">Tema 2</a>
-                                          <a class="dropdown-item" href="#">Tema 3</a>
-                                        </div>
-                                      </li>
+    <h4>1. Agregar Dependencias</h4>
+    <p>Para acceder a RecyclerView personalizado, debe agregar las Bibliotecas de soporte (dependencia)</p>
+    <p>Abrir el archivo build.gradle / Agregar Dependencia</p>
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/imp_recycler.jpg" width="500" height="100" class="img-fluid"></div>
 
-                                      <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Parcial III
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              <a class="dropdown-item" href="#">Tema 1</a>
-                                              <a class="dropdown-item" href="#">Tema 2</a>
-                                              <a class="dropdown-item" href="#">Tema 3</a>
-                                            </div>
-                                          </li>
-                              </ul>
-                            </div>
-                    </div>
-              	</nav>
-          </header>
+    <h4>2.Diseñar layout que contenga RecyclerView</h4>
+    <p>activity_main.xml </p>
+    <p>En el layout de nuestra activity incluimos la etiqueta </p>
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler5.jpg" width="500" height="150" class="img-fluid"></div>
 
-	 <section class="container">
-		<div class="display-4">ADAPTADORES</div>
-        <br>
+    <h4>3.Diseñar layout para cada elemento de recyclerview</h4>
+    <p>elemento_personaje.xml </p>
+    Incluiremos campos de la lista como: imagen, nombre, descripcion.
+    Cada uno con su identificador.
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler6.jpg" width="600" height="350" class="img-fluid"></div>
 
-        <!-- CEDEÑO -->
-        <div class="display-1" id="bh">Diseños</div>
-              <hr>              
-              <p> Todos los elementos del diseño se crear usando una jerarquía de objetos View y ViewGroup. Una View suele mostrar un elemento que el usuario puede ver y con el que puede interactuar. Por su parte, ViewGroup es un contenedor invisible que define la estructura de diseño de View y otros objetos ViewGroup</p>
-              <center>              
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_1.png" class="img-fluid">
-              </center>
-	      	<br>	
-              <h3>Atributos</h3>
-              <p>Cada objeto View y ViewGroup admite su propia variedad de atributos XML. Algunos atributos son específicos de un objeto View (por ejemplo, TextView admite el atributo textSize), aunque estos atributos también son heredados por cualquier objeto View que pueda extender esta clase. Algunos son comunes para todos los objetos View, porque se heredan de la clase raíz View (como el atributo id).</p>
-              <p>El símbolo arroba (@) al comienzo de la string indica que el analizador de XML debe analizar y expandir el resto de la string de ID e identificarla como un recurso de ID. El símbolo más (+) significa que es un nuevo nombre de recurso que se debe crear y agregar a nuestros recursos (en el archivo R.java).</p>
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_2.png" class="img-fluid"><br>
-              </center>  
-	    	<br>
-              <p>Luego, crear una instancia del objeto View y capturarla desde el diseño (generalmente en el método onCreate())</p>            
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_3.png" class="img-fluid"><br>
-              </center>
-		<br>
-              <h3>Creación de diseños con un adaptador</h3>
-              <p>Cuando el contenido del diseño sea dinámico o no sea predeterminado, se puede usar un diseño con la subclase AdapterView para completar el diseño con vistas durante el tiempo de ejecución. Una subclase de la clase AdapterView usa un Adapter para enlazar datos con el diseño. Adapter se comporta como intermediario entre la fuente de datos y el diseño AdapterView; Adapter recupera los datos (de una fuente como una matriz o una consulta a la base de datos) y convierte cada entrada en una vista que puedes agregar al diseño AdapterView.</p>
-              <p>Los diseños comunes respaldados por un adaptador incluyen:</p>
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/Diseño_4.png" class="img-fluid">
-              </center>
-		<!---->
-        <br> <br>
 
-  		<!-- CALO -->
-        <div class="display-1" id="bh">ADAPTADORES PERSONALIZADOS CON RecyclerView</div>
-		<p>Es una versión avanzada de ListView
-		Lo que hace es mostrar una lista desplazable de elementos basada en grandes conjuntos de datos
-		(datos que van a cambiar)
-		</p>
-		<div class="display-1" id="bh">Cómo se usa un RecyclerView</div>
-		<p>Se debe definir un adaptador con un LayoutManager.</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler3.jpg" width="550" height="200" class="img-fluid"></div>
-		<li>Clase Adapter: Configura el modelo de datos a ser mostrados en las vistas.(elementos)</li>
-		<li>Elemento LayoutManager: Define la posicion de los elementos (lista, cuadricula)</li> 
-		<li>Decide cuándo reciclar las vistas de items que ya no son visibles.</li>
-		</br>
-		<p>Para su presentación disponemos de las clases definidas para LayoutManager:</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler4.jpg" width="550" height="200" class="img-fluid"></div>
-		</br>
-		<div class="display-1" id="bh">Crear lista con RecyclerView</div>
-              <hr>
-		
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recyclerview1.jpg" width="250" height="450" class="img-fluid"></div>
-		
-		<h4>1. Agregar Dependencias</h4>	
-		<p>Para acceder a RecyclerView personalizado, debe agregar las Bibliotecas de soporte (dependencia)</p>
-		<p>Abrir el archivo build.gradle / Agregar Dependencia</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/imp_recycler.jpg" width="500" height="100" class="img-fluid"></div>
-        
-		<h4>2.Diseñar layout que contenga RecyclerView</h4>
-		<p>activity_main.xml </p>
-		<p>En el layout de nuestra activity incluimos la etiqueta </p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler5.jpg" width="500" height="150" class="img-fluid"></div>
-		
-		<h4>3.Diseñar layout para cada elemento de recyclerview</h4>
-		<p>elemento_personaje.xml </p>
-		Incluiremos campos de la lista como: imagen, nombre, descripcion.
-		Cada uno con su identificador.
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler6.jpg" width="600" height="350" class="img-fluid"></div>
-		
-		
-		<h4>4.Implementar actividad que visualice el RecyclerView</h4>
-		<p>MainActivity.java </p>
-		Se define e inicializan recyclerview y layoutManager
-		Método onCreate : inicializa el RecyclerView
-		En el método setContentView se asigna el activity_main.
-			<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler7.jpg" width="500" height="250" class="img-fluid"></div>	
-		
-		<h4>5.Crear el adaptador </h4>
-		<p>Adaptador.java </p>
-		Personalizar cada elemento de la lista  
-		<!---->
-        </br> 
-		<p>Finalmente tenemos la lista personalizada</p>
-		<div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler8.jpg" width="300" height="400" class="img-fluid"></div>
-		</br>
-        <br> <br>
+    <h4>4.Implementar actividad que visualice el RecyclerView</h4>
+    <p>MainActivity.java </p>
+    Se define e inicializan recyclerview y layoutManager
+    Método onCreate : inicializa el RecyclerView
+    En el método setContentView se asigna el activity_main.
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler7.jpg" width="500" height="250" class="img-fluid"></div>
 
-		<!-- GUZMÁN-->
-        <div class="display-1" id="bh">RELLENO DEL CONTROL DE NÚMEROS CON LAS ELECCIONES DEL USUARIO</div>
-              <hr>
-              <p>Las opciones que proporcionemos para el control de números pueden provenir de cualquier fuente, pero deben brindarse
-              mediante un SpinnerAdapter (como un ArrayAdapter) si están disponibles en una matriz o mediante un CursorAdapter
-              si están disponibles a partir de una consulta de la base de datos.</p>
+    <h4>5.Crear el adaptador </h4>
+    <p>Adaptador.java </p>
+    Personalizar cada elemento de la lista
+    </br>
+    <p>Finalmente tenemos la lista personalizada</p>
+    <div align="center"><img src="../img/Primer_parcial/img_adaptadores/recycler8.jpg" width="300" height="400" class="img-fluid"></div>
+    </br>
+    <br> <br>
 
-              <p>Por ejemplo, si las opciones disponibles para nuestro control de números son predeterminadas, podemos proporcionarlas
-              con una matriz de strings definida en un archivo de recursos de strings:</p>
+    <div class="display-1" id="bh">RELLENO DEL CONTROL DE NÚMEROS CON LAS ELECCIONES DEL USUARIO</div>
+    <hr>
+    <p>Las opciones que proporcionemos para el control de números pueden provenir de cualquier fuente, pero deben brindarse
+      mediante un SpinnerAdapter (como un ArrayAdapter) si están disponibles en una matriz o mediante un CursorAdapter
+      si están disponibles a partir de una consulta de la base de datos.</p>
 
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_1.jpg" width="520" height="260" class="img-fluid">
-              </center>
+    <p>Por ejemplo, si las opciones disponibles para nuestro control de números son predeterminadas, podemos proporcionarlas
+      con una matriz de strings definida en un archivo de recursos de strings:</p>
 
-              <br>
-              <p>Con una matriz como esta, podemos usar el siguiente código en nuestro Activity o Fragment para suministrar al control
-              de números la matriz mediante una instancia de ArrayAdapter:</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/adaptadores_1.jpg" width="520" height="260" class="img-fluid">
+    </center>
 
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_2.jpg" width="580" height="230" class="img-fluid">
-              </center>
+    <br>
+    <p>Con una matriz como esta, podemos usar el siguiente código en nuestro Activity o Fragment para suministrar al control
+      de números la matriz mediante una instancia de ArrayAdapter:</p>
 
-              <br>
-              <p>El método createFromResource() nos permite crear un ArrayAdapter a partir de la matriz de strings. El tercer argumento
-              para este método es un recurso de diseño que define la manera en que se muestra la opción seleccionada en la supervisión
-              del control de números. El diseño de simple_spinner_item se proporciona mediante la plataforma y es el predeterminado que
-              demos usar, a menos que deseemos definir nuestro propio diseño para la apariencia del control de números.</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/adaptadores_2.jpg" width="580" height="230" class="img-fluid">
+    </center>
 
-              <p>Luego, debemos llamar a setDropDownViewResource(int) para especificar el diseño que debe usar el adaptador a fin de
-              mostrar la lista de elecciones del control de números, simple_spinner_dropdown_item es otro diseño estándar definido
-              por la plataforma.</p>
+    <br>
+    <p>El método createFromResource() nos permite crear un ArrayAdapter a partir de la matriz de strings. El tercer argumento
+      para este método es un recurso de diseño que define la manera en que se muestra la opción seleccionada en la supervisión
+      del control de números. El diseño de simple_spinner_item se proporciona mediante la plataforma y es el predeterminado que
+      demos usar, a menos que deseemos definir nuestro propio diseño para la apariencia del control de números.</p>
 
-              <p>Llamamos a setAdapter() para aplicar el adaptador a nuestro Spinner.</p>
-              <br>
+    <p>Luego, debemos llamar a setDropDownViewResource(int) para especificar el diseño que debe usar el adaptador a fin de
+      mostrar la lista de elecciones del control de números, simple_spinner_dropdown_item es otro diseño estándar definido
+      por la plataforma.</p>
 
-        <div class="display-1" id="bh">RESPUESTA A LAS SELECCIONES DEL USUARIO</div>
-              <hr>
-              <p>Cuando un usuario selecciona un elemento de menú desplegable, el objeto Spinner recibe un evento en relación con el
-              elemento seleccionado.</p>
+    <p>Llamamos a setAdapter() para aplicar el adaptador a nuestro Spinner.</p>
+    <br>
 
-              <p>Para definir el controlador del evento de selección de un control de números, implementa la interfaz
-              AdapterView.OnItemSelectedListener y el método de devolución de llamada onItemSelected() correspondiente.
-              Por ejemplo, esta es una implementación de la interfaz en una Activity:</p>
+    <div class="display-1" id="bh">RESPUESTA A LAS SELECCIONES DEL USUARIO</div>
+    <hr>
+    <p>Cuando un usuario selecciona un elemento de menú desplegable, el objeto Spinner recibe un evento en relación con el
+      elemento seleccionado.</p>
 
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_3.jpg" width="600" height="260" class="img-fluid">
-              </center>
-              <br>
-              <p>AdapterView.OnItemSelectedListener requiere los métodos de devolución de llamada onItemSelected() y
-              onNothingSelected().</p>
+    <p>Para definir el controlador del evento de selección de un control de números, implementa la interfaz
+      AdapterView.OnItemSelectedListener y el método de devolución de llamada onItemSelected() correspondiente.
+      Por ejemplo, esta es una implementación de la interfaz en una Activity:</p>
 
-              <p>Luego, debemos especificar la implementación de la interfaz; para ello, llamamos a setOnItemSelectedListener():</p>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/adaptadores_3.jpg" width="600" height="260" class="img-fluid">
+    </center>
+    <br>
+    <p>AdapterView.OnItemSelectedListener requiere los métodos de devolución de llamada onItemSelected() y
+      onNothingSelected().</p>
 
-              <center>
-              <img src="../img/Primer_parcial/img_adaptadores/adaptadores_4.jpg" width="400" height="130" class="img-fluid">
-              </center>
+    <p>Luego, debemos especificar la implementación de la interfaz; para ello, llamamos a setOnItemSelectedListener():</p>
 
-              <br>
-              <p>Si implementamos la interfaz AdapterView.OnItemSelectedListener con nuestra Activity o Fragment (como en el ejemplo
-              anterior), podemos pasar this como la instancia de la interfaz.</p>
-        <br>
+    <center>
+      <img src="../img/Primer_parcial/img_adaptadores/adaptadores_4.jpg" width="400" height="130" class="img-fluid">
+    </center>
 
- <!-- Optional JavaScript -->
- <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <br>
+    <p>Si implementamos la interfaz AdapterView.OnItemSelectedListener con nuestra Activity o Fragment (como en el ejemplo
+      anterior), podemos pasar this como la instancia de la interfaz.</p>
+    <br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

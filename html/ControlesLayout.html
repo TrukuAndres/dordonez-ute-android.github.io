@@ -1,237 +1,240 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-    <title>Desarrollo de Sistemas II - Controles y Layout</title>
-  </head>
-  <body>
-      
-          <header>
-              <div class="hero">
-                  <div class="container">
-                        <div class="display-3">
-                                CONTROLES Y LAYOUT
-                        </div>
-                  </div>  
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Desarrollo de Sistemas II - Controles y Layout</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="container">
+        <div class="display-3">
+          CONTROLES Y LAYOUT
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="..\index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial I
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="entorno.html">Entorno</a>
+                <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
+                <a class="dropdown-item" href="actividades.html">Actividades</a>
+                <a class="dropdown-item" href="androidmanifest.html">Android Manifest</a>
+                <a class="dropdown-item" href="intents.html">Intents</a>
+                <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
+                <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
+                <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
+                <a class="dropdown-item" href="menus.html">Menús</a>
               </div>
-                  
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                            <a class="navbar-brand" href="#">Menú</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                          
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                                </li>
-    
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Parcial I
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="entorno.html">Entorno</a>
-                                    <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
-                                    <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
-                                    <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con adaptadores</a>
-                                    <a class="dropdown-item" href="menus.html">Menús</a>
-                                  </div>
-                                </li>
-    
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Parcial II
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Tema 1</a>
-                                          <a class="dropdown-item" href="#">Tema 2</a>
-                                          <a class="dropdown-item" href="#">Tema 3</a>
-                                        </div>
-                                      </li>
-    
-                                      <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Parcial III
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              <a class="dropdown-item" href="#">Tema 1</a>
-                                              <a class="dropdown-item" href="#">Tema 2</a>
-                                              <a class="dropdown-item" href="#">Tema 3</a>
-                                            </div>
-                                          </li>
-                              </ul>
-                            </div>
-                    </div>
-                        
-                      </nav>
-          </header> 
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial II
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ciclo_de_vida.html">Ciclo de vida y estado</a>
+                <a class="dropdown-item" href="fragmentos.html">Fragmentos</a>
+                <a class="dropdown-item" href="webapps.html">Web Apps</a>
+                <a class="dropdown-item" href="seguridad_permisos.html">Seguridad y permisos</a>
+                <a class="dropdown-item" href="preferencias_archivos_bdd.html">Preferencias, archivos y BDD</a>
+                <a class="dropdown-item" href="hilos_asynctask.html">Hilos y Async Task</a>
+                <a class="dropdown-item" href="comunicacion_red.html">Comunicación por red</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial III
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tema 1</a>
+                <a class="dropdown-item" href="#">Tema 2</a>
+                <a class="dropdown-item" href="#">Tema 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+  </header>
+  <section class="container">
+    <div class="display-4">¿Qué son los controles?</div>
+    <hr>
+    <p>Los controles de entrada son los componentes interactivos de la interfaz de usuario de la aplicación, Android ofrece una gran variedad de controles como botones, campos de texto,barras de búsqueda, etc.</p>
+      <h3>
+        <font color="#5499C7 ">¿Qué tipos de controles existen en el desarrollo Android?</font>
+      </h3>
+    </p>
+    <p> Lo siguiente es una lista de algunos de los controles comunes que puede usar en la aplicación.</p>
+    <ul>
+      <li><a href="#bh">Edit Text</a></li>
+      <li><a href="#bn">Button</a></li>
+      <li><a href="#tb">Toggle Button</a></li>
+      <li><a href="#rb">Radio Button</a></li>
+      <li><a href="#ve">TextView</a></li>
+    </ul>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl5.png" alt="Controles" class="img-fluid">
+    </center>
+    <br> <br>
 
-      <section class="container">
-              <div class="display-4">¿Qué son los controles?</div>
-              <hr>
-              <p>Los controles de entrada son los componentes interactivos de la interfaz de usuario de la aplicación, Android ofrece una gran variedad de controles como botones, campos de texto,barras de búsqueda, etc.</p>
-             
+    <div class="display-1" id="bh">Edit Text</div>
+    <hr>
+    <p>El control EditText es el componente de edición de texto que proporciona la plataforma Android. Permite la introducción y edición de texto por parte del usuario.</p>
 
-              <p><h3><font color="#5499C7 ">¿Qué tipos de controles existen en el desarrollo Android?</font></h3></p>
-               <p> Lo siguiente es una lista de algunos de los controles comunes que puede usar en la aplicación.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl66.png" alt="Edit Text" class="img-fluid">
+    </center>
+    <br><br>
 
-              <ul>
-                  <li><a href="#bh">Edit Text</a></li>
-                  <li><a href="#bn">Button</a></li>
-		    <li><a href="#tb">Toggle Button</a></li>
-		      <li><a href="#rb">Radio Button</a></li>
-                  <li><a href="#ve">TextView</a></li>
-		      
-              </ul>
-          <center>    
-	  <img src="../img/Primer_parcial/ControlesL/cl5.png" alt="Controles" class="img-fluid">
-	  </center>
-              <br> <br>
+    <div class="display-1" id="bn">Button</div>
+    <hr>
+    <p>Un control de tipo Button es el botón más básico que podemos utilizar y normalmente contiene un simple texto, el usuario puede presionar o hacer clic para realizar una acción.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl7.png" alt=" Button" class="img-fluid">
+    </center>
+    <br> <br>
 
-              <div class="display-1" id="bh">Edit Text</div>
-              <hr>
-              <p>El control EditText es el componente de edición de texto que proporciona la plataforma Android. Permite la introducción y edición de texto por parte del usuario.</p>
-              
-	      <center>
-	      <img src="../img/Primer_parcial/ControlesL/cl66.png" alt="Edit Text" class="img-fluid">
-	  </center>
-		<br><br>
-         	
-              <div class="display-1" id="bn">Button</div>
-              <hr>
-              <p>Un control de tipo Button es el botón más básico que podemos utilizar y normalmente contiene un simple texto, el usuario puede presionar o hacer clic para realizar una acción.</p>
-          <center>    
-	<img src="../img/Primer_parcial/ControlesL/cl7.png" alt=" Button" class="img-fluid">
-	  </center>
-              <br> <br>
-	  
-	   <div class="display-1" id="tb">Toggle Button</div>
-              <hr>
-              <p>Un control de tipo ToggleButton es un tipo de botón que puede permanecer en dos posibles estados, pulsado o no_pulsado. En este caso, en vez de definir un sólo texto para el control, se definen dos, dependiendo de su estado. Así, se puede asignar las propiedades android:textOn y android:textoOff.</p>
-          <center>    
-	  <img src="../img/Primer_parcial/ControlesL/cl111.png" alt=" ToggleButton" class="img-fluid">
-	  </center>
-              <br> <br>
-	  
-	    <div class="display-1" id="rb">Radio Button</div>
-              <hr>
-              <p>Es un control de selección que proporciona la interfaz de Android para permitir a los usuarios seleccionar una opción de un conjunto.</p>
-          <center>    
-	  <img src="../img/Primer_parcial/ControlesL/cl12.png" alt=" RadioButton" class="img-fluid">
-	  </center>
-              <br> <br>
-	  
-              <div class="display-1" id="ve">Text View</div>
-              <hr>
-              <p>El control TextView es otro de los clásicos en la programación de GUIs, las etiquetas de texto, y se utiliza para mostrar un determinado texto al usuario. Al igual que en el caso de los botones, el texto del control se establece mediante la propiedad android:text.
-Los TextView son propiedades de texto que nos van a permitir personalizar nuestros layouts. Como vemos en la siguiente imagen, podremos escribir etiquetas como «Título» o también dejar un campo vacío para luego completar con unos determinados datos, y así reutilizar el layout para ser reemplazado con una determinada información a medida que avanzamos de posición:
-</p>
-	   <center>    
-	  <img src="../img/Primer_parcial/ControlesL/cl9.png" alt=" TextView" class="img-fluid">
-	  </center>
-             
-              <br> <br>
+    <div class="display-1" id="tb">Toggle Button</div>
+    <hr>
+    <p>Un control de tipo ToggleButton es un tipo de botón que puede permanecer en dos posibles estados, pulsado o no_pulsado. En este caso, en vez de definir un sólo texto para el control, se definen dos, dependiendo de su estado. Así, se puede
+      asignar las propiedades android:textOn y android:textoOff.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl111.png" alt=" ToggleButton" class="img-fluid">
+    </center>
+    <br> <br>
 
-	  </section>
+    <div class="display-1" id="rb">Radio Button</div>
+    <hr>
+    <p>Es un control de selección que proporciona la interfaz de Android para permitir a los usuarios seleccionar una opción de un conjunto.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl12.png" alt=" RadioButton" class="img-fluid">
+    </center>
+    <br> <br>
+
+    <div class="display-1" id="ve">Text View</div>
+    <hr>
+    <p>El control TextView es otro de los clásicos en la programación de GUIs, las etiquetas de texto, y se utiliza para mostrar un determinado texto al usuario. Al igual que en el caso de los botones, el texto del control se establece mediante la
+      propiedad android:text.
+      Los TextView son propiedades de texto que nos van a permitir personalizar nuestros layouts. Como vemos en la siguiente imagen, podremos escribir etiquetas como «Título» o también dejar un campo vacío para luego completar con unos determinados
+      datos, y así reutilizar el layout para ser reemplazado con una determinada información a medida que avanzamos de posición:
+    </p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl9.png" alt=" TextView" class="img-fluid">
+    </center>
+
+    <br> <br>
+
+  </section>
 
 
 
-          <section class="container">
-              <div class="display-4">¿Qué es un layout?</div>
-              <hr>
-              <p>Un layout es un objeto que representa el espacio contenedor de todas las vistas (Views) dentro de la actividad.En él se define la estructura y el orden de los elementos para que el usuario pueda interactuar con la interfaz. Lógicamente se representan con subclases Java que heredan de la clase ViewGroup.</p>
-              
-              <p><h3><font color="#5499C7 ">¿Qué tipos de layouts existen en el desarrollo Android?</font></h3></p>
-              <p>Existen varios y su uso depende de la necesidad de cada persona.Los siguientes son los más populares y fáciles de usar</p>
-              <ul>
-                  <li><a href="#ll">Linear Layout</a></li>
-                  <li><a href="#fl">Frame Layout</a></li>
-                  <li><a href="#rl">Relative Layout</a></li>
-		  <li><a href="#tl">Table Layout</a></li>
-		      <li><a href="#gl">Grid Layout</a></li>
-		     
-		      <br><br>
-              </ul>
-        <center>      
-	
-	<img src="../img/Primer_parcial/ControlesL/cl2.png" alt="LinearLayout" class="img-fluid">
-		
-	</center>
-              <br> <br>
+  <section class="container">
+    <div class="display-4">¿Qué es un layout?</div>
+    <hr>
+    <p>Un layout es un objeto que representa el espacio contenedor de todas las vistas (Views) dentro de la actividad.En él se define la estructura y el orden de los elementos para que el usuario pueda interactuar con la interfaz. Lógicamente se
+      representan con subclases Java que heredan de la clase ViewGroup.</p>
 
-              <div class="display-1" id="ll">LinearLayout</div>
-              <hr>
-              <p>El Linear Layout es el más sencillo. Dentro de él los elementos son ubicados en forma linear a través de columnas o filas. Posee un atributo que permite modificar su orientación, ya sea para presentar los elementos horizontal o verticalmente.</p>
-              
-	      <p>Los elementos contenidos en un LinearLayout pueden establecer sus propiedades android:layout_width y android:layout_height para determinar sus dimensiones dentro del layout.</p>
-	<center>      
-	<img src="../img/Primer_parcial/ControlesL/cl2.png" alt="LinearLayout" class="img-fluid">
-	</center>
-		<br>
-         	
-              <div class="display-1" id="fl">FrameLayout</div>
-              <hr>
-              <p>Un FrameLayout coloca todos sus controles hijos alineados con su esquina superior izquierda, de forma que cada control quedará oculto por el control siguiente.</p>
-        <center>      
-	<img src="../img/Primer_parcial/ControlesL/cl3.png" alt=" FrameLayout" class="img-fluid">
-	</center>
-              <br> <br>
+    <p>
+      <h3>
+        <font color="#5499C7 ">¿Qué tipos de layouts existen en el desarrollo Android?</font>
+      </h3>
+    </p>
+    <p>Existen varios y su uso depende de la necesidad de cada persona.Los siguientes son los más populares y fáciles de usar</p>
+    <ul>
+      <li><a href="#ll">Linear Layout</a></li>
+      <li><a href="#fl">Frame Layout</a></li>
+      <li><a href="#rl">Relative Layout</a></li>
+      <li><a href="#tl">Table Layout</a></li>
+      <li><a href="#gl">Grid Layout</a></li>
 
-              <div class="display-1" id="rl">RelativeLayout</div>
-              <hr>
-              <p>Este es el layout más recomendado a usar, ya que los componentes dentro de él se pueden organizar de forma relativa entre sí.</p>
-        <center>      
-	<img src="../img/Primer_parcial/ControlesL/cl4.png" alt="RelativeLayout" width="1100px" class="img-fluid">
-	</center>
-              <br> <br>
-        
-	<div class= "display-1" id ="gl">Grid Layout</div>
-	<hr>
-	<p>
-	El ''GridLayout'' coloca los componentes en forma de matriz, haciendo que todos ocupen el mismo tamaño. Es un Layout adecuado para hacer matrices de cajas de texto (por ejemplo, si queremos hacer un crucigrama o un sudoku) o para matrices de botones (por ejemplo, una calculadora).
-Se puede instanciar pasándole el número de filas y columnas que queremos. Por ejemplo, el siguiente trozo de código prepara una ventana con un GridLayout de 10 filas y 5 columnas.
-	</p>
-	<p>
-		Un GridLayout es un ViewGroup que alinea sus elementos hijos en una cuadrícula (grilla ó grid). Nace con el fin de evitar anidar linear layouts para crear diseños complejos.
-	</p>
-	<center>  
-		<table>
-			<tr>
-				<td>
-	<img src="../img/Primer_parcial/ControlesL/gridla.png" alt="Grid Layout">
-				</td><td><img src="../img/Primer_parcial/ControlesL/layout.png" alt="Grid Layout" class="img-fluid"
-					      </td>
-			</tr>
-		</table>
-	</center>
-	
-	<div class="display-1" id="tl">TableLayout</div>
-              <hr>
-              <p>Un TableLayout permite distribuir sus elementos hijos de forma tabular, definiendo las filas y columnas necesarias, y la posición de cada componente dentro de la tabla.</p>
-              
-	      <p>La estructura de la tabla se define de forma similar a como se hace en HTML, es decir, indicando las filas que compondrán la tabla (objetos TableRow), y dentro de cada fila las columnas necesarias.</p>
-	<center>
-				<img src="../img/Primer_parcial/ControlesL/c20.png" alt=" TableLayout" class="img-fluid">	
-	</center>
-          </section>
-    
+      <br><br>
+    </ul>
+    <center>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+      <img src="../img/Primer_parcial/ControlesL/cl2.png" alt="LinearLayout" class="img-fluid">
+
+    </center>
+    <br> <br>
+
+    <div class="display-1" id="ll">LinearLayout</div>
+    <hr>
+    <p>El Linear Layout es el más sencillo. Dentro de él los elementos son ubicados en forma linear a través de columnas o filas. Posee un atributo que permite modificar su orientación, ya sea para presentar los elementos horizontal o verticalmente.
+    </p>
+
+    <p>Los elementos contenidos en un LinearLayout pueden establecer sus propiedades android:layout_width y android:layout_height para determinar sus dimensiones dentro del layout.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl2.png" alt="LinearLayout" class="img-fluid">
+    </center>
+    <br>
+
+    <div class="display-1" id="fl">FrameLayout</div>
+    <hr>
+    <p>Un FrameLayout coloca todos sus controles hijos alineados con su esquina superior izquierda, de forma que cada control quedará oculto por el control siguiente.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl3.png" alt=" FrameLayout" class="img-fluid">
+    </center>
+    <br> <br>
+
+    <div class="display-1" id="rl">RelativeLayout</div>
+    <hr>
+    <p>Este es el layout más recomendado a usar, ya que los componentes dentro de él se pueden organizar de forma relativa entre sí.</p>
+    <center>
+      <img src="../img/Primer_parcial/ControlesL/cl4.png" alt="RelativeLayout" width="1100px" class="img-fluid">
+    </center>
+    <br> <br>
+
+    <div class="display-1" id="gl">Grid Layout</div>
+    <hr>
+    <p>
+      El ''GridLayout'' coloca los componentes en forma de matriz, haciendo que todos ocupen el mismo tamaño. Es un Layout adecuado para hacer matrices de cajas de texto (por ejemplo, si queremos hacer un crucigrama o un sudoku) o para matrices de
+      botones (por ejemplo, una calculadora).
+      Se puede instanciar pasándole el número de filas y columnas que queremos. Por ejemplo, el siguiente trozo de código prepara una ventana con un GridLayout de 10 filas y 5 columnas.
+    </p>
+    <p>
+      Un GridLayout es un ViewGroup que alinea sus elementos hijos en una cuadrícula (grilla ó grid). Nace con el fin de evitar anidar linear layouts para crear diseños complejos.
+    </p>
+    <center>
+      <table>
+        <tr>
+          <td>
+            <img src="../img/Primer_parcial/ControlesL/gridla.png" alt="Grid Layout">
+          </td>
+          <td><img src="../img/Primer_parcial/ControlesL/layout.png" alt="Grid Layout" class="img-fluid" </td> </tr> </table> </center> <div class="display-1" id="tl">TableLayout</div>
+            <hr>
+            <p>Un TableLayout permite distribuir sus elementos hijos de forma tabular, definiendo las filas y columnas necesarias, y la posición de cada componente dentro de la tabla.</p>
+
+            <p>La estructura de la tabla se define de forma similar a como se hace en HTML, es decir, indicando las filas que compondrán la tabla (objetos TableRow), y dentro de cada fila las columnas necesarias.</p>
+            <center>
+              <img src="../img/Primer_parcial/ControlesL/c20.png" alt=" TableLayout" class="img-fluid">
+            </center>
+  </section>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
 </html>

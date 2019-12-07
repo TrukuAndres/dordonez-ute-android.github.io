@@ -1,293 +1,308 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-    <title>Desarrollo de Sistemas II - Entorno</title>
-  </head>
-  <body>
-
-          <header>
-              <div class="hero">
-                  <div class="container">
-                        <div class="display-3">
-                               ENTORNO
-                        </div>
-                  </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Desarrollo de Sistemas II - Entorno</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="container">
+        <div class="display-3">
+          ENTORNO
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="..\index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial I
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="entorno.html">Entorno</a>
+                <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
+                <a class="dropdown-item" href="actividades.html">Actividades</a>
+                <a class="dropdown-item" href="androidmanifest.html">Android Manifest</a>
+                <a class="dropdown-item" href="intents.html">Intents</a>
+                <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
+                <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
+                <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
+                <a class="dropdown-item" href="menus.html">Menús</a>
               </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial II
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ciclo_de_vida.html">Ciclo de vida y estado</a>
+                <a class="dropdown-item" href="fragmentos.html">Fragmentos</a>
+                <a class="dropdown-item" href="webapps.html">Web Apps</a>
+                <a class="dropdown-item" href="seguridad_permisos.html">Seguridad y permisos</a>
+                <a class="dropdown-item" href="preferencias_archivos_bdd.html">Preferencias, archivos y BDD</a>
+                <a class="dropdown-item" href="hilos_asynctask.html">Hilos y Async Task</a>
+                <a class="dropdown-item" href="comunicacion_red.html">Comunicación por red</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parcial III
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tema 1</a>
+                <a class="dropdown-item" href="#">Tema 2</a>
+                <a class="dropdown-item" href="#">Tema 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                            <a class="navbar-brand" href="#">Menú</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
+  </header>
+  <section class="container">
+    <div class="display-4">ENTORNO</div>
+    <hr>
+    <ul>
+      <li><a href="#bh">Introduccion a Android Studio</a></li>
+      <li><a href="#bn">Estructura del Proyecto</a></li>
+      <li><a href="#ve">Descripcion General de Proyectos Modulos</a></li>
+      <li><a href="#bvh">Archivos de Proyecto</a></li>
+      <li><a href="#vh">Vista de Proyectos de Android</a></li>
+      <li><a href="#be">Configuración de la estructura de Proyecto</a></li>
+      <li><a href="#ccupo">Cómo crear un Proyecto</a></li>
+      <li><a href="#ceup">Cómo elegir un Proyecto</a></li>
+      <li><a href="#ccup">Cómo configurar un proyecto</a></li>
+      <li><a href="#ciupe">Cómo importar un proyecto existente</a></li>
+      <li><a href="#cbdfdt">Conceptos básicos del flujo de trabajo para desarrolladores</a></li>
+    </ul>
+    <br> <br>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                                </li>
+    <div class="display-1" id="bh">Introducción a Android Studio</div>
+    <hr>
+    <p>Es el entorno de desarrollo integrado oficial para el desarrollo de apps para Android, está basado en IntelliJ IDEA po lo que posee sus características y otras más, las cuales aumentan la productividad cuando se desarrolla apps, como por
+      ejemplo:</p>
+    <ul>
+      <li><a>Un sistema de compilación flexible basado en Gradle.</a></li>
+      <li><a></a>Un emulador rápido y cargado de funciones.</li>
+      <li><a></a>Un entorno unificado donde se puede desarrollar para todos los dispositivos Android.</li>
+      <li><a></a>Aplicación de cambios para insertar cambios de códigos y recursos a la aplicación en ejecución sin reiniciar la aplicación.</li>
+      <li><a></a>Variedad de marcos de trabajo y herramientas de prueba.</li>
+    </ul>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/ent_tem1.jpg" alt="Tema1" class="img-fluid">
+    </center>
 
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Parcial I
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="entorno.html">Entorno</a>
-                                    <a class="dropdown-item" href="interfazUsuario.html">Interfaz de usuario</a>
-                                    <a class="dropdown-item" href="ControlesLayout.html">Controles y layout</a>
-                                    <a class="dropdown-item" href="vistasAdaptadores.html">Vistas con Adaptadores</a>
-                                    <a class="dropdown-item" href="Adaptadores.html">Adaptadores</a>
-                                    <a class="dropdown-item" href="menus.html">Menús</a>
-                                  </div>
-                                </li>
+    <br> <br>
 
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Parcial II
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Tema 1</a>
-                                          <a class="dropdown-item" href="#">Tema 2</a>
-                                          <a class="dropdown-item" href="#">Tema 3</a>
-                                        </div>
-                                      </li>
+    <div class="display-1" id="bn">Estructura del proyecto</div>
+    <hr>
+    <p>Los proyectos incluyen uno o más módulos con archivos de código fuente y archivos de recursos, como pueden ser:</p>
+    <ul>
+      <li><a>Módulos de apps para Android</a></li>
+      <li><a>Módulos de biblioteca</a></li>
+      <li><a>Módulos de Google App Engine</a></li>
+    </ul>
+    <p>Android Studio muestra los archivos del proyecto en la vista de proyecto de Android. Esta vista está organizada en módulos para que se pueda acceder rápidamente a los archivos fuente del proyecto. Cada módulo de las aplicaciones contienen
+      estas carpetas:</p>
+    <ul>
+      <li><a>manifests</a></li>
+      <li><a>java</a></li>
+      <li><a>res</a></li>
+    </ul>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/ent_tem2.png" alt="tema2" class="img-fluid">
+    </center>
 
-                                      <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Parcial III
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              <a class="dropdown-item" href="#">Tema 1</a>
-                                              <a class="dropdown-item" href="#">Tema 2</a>
-                                              <a class="dropdown-item" href="#">Tema 3</a>
-                                            </div>
-                                          </li>
-                              </ul>
-                            </div>
-                    </div>
+    <br> <br>
 
-                      </nav>
-          </header>
-          <section class="container">
-              <div class="display-4">ENTORNO</div>
-              <hr>
+    <div class="display-1" id="ve">Descripción general de proyectos</div>
+    <hr>
+    <p>Un proyecto en Android Studio contiene todo lo que define el trabajo para desarrollar una app, desde código fuente y recursos hasta código de prueba y configuraciones de compilación. Cuando se comienza un proyecto nuevo, Android Studio crea la
+      estructura necesaria para todos los archivos y los hace visibles.</p>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/ent_tem3.png" alt="tema3" class="img-fluid">
+    </center>
+    <br> <br>
 
-              <ul>
-                  <li><a href="#bh">Introduccion a Android Studio</a></li>
-                  <li><a href="#bn">Estructura del Proyecto</a></li>
-                  <li><a href="#ve">Descripcion General de Proyectos Modulos</a></li>
-                  <li><a href="#bvh">Archivos de Proyecto</a></li>
-                  <li><a href="#vh">Vista de Proyectos de Android</a></li>
-                  <li><a href="#be">Configuración de la estructura de Proyecto</a></li>
-		  <li><a href="#ccupo">Cómo crear un Proyecto</a></li>
-		  <li><a href="#ceup">Cómo elegir un Proyecto</a></li>
-		  <li><a href="#ccup">Cómo configurar un proyecto</a></li>
-		  <li><a href="#ciupe">Cómo importar un proyecto existente</a></li>
-		  <li><a href="#cbdfdt">Conceptos básicos del flujo de trabajo para desarrolladores</a></li>
-		
-		      
-		      
-              </ul>
-              <br> <br>
+    <div class="display-1" id="ve">Módulos</div>
+    <hr>
+    <p>Son un conjunto de archivos fuente y opciones de configuración de compilación que permiten dividir el proyecto en unidades de funcionalidad. El proyecto puede tener uno o más módulos y cada módulo se puede compilar, probar y depurar de forma
+      independiente. Existen varios tipos de módulos, como los que se muestran a continuación:</p>
+    <ul>
+      <li><a><strong>Módulo de app para Android</strong><br>Proporciona un contenedor para el código fuente de la app, los archivos de recursos y las configuraciones.</a></li>
+      <li><a><strong>Módulo de funciones dinámicas</strong><br>Representa una función modularizada de la app que puede aprovechar Dynamic Delivery de Google Play.</a></li>
+      <li><a><strong>Módulo de biblioteca</strong><br>Proporciona un contenedor para el código reutilizable, que se puede usar como dependencia en otros módulos de aplicación o importar a otros proyectos. A nivel estructural, un módulo de biblioteca
+          es lo mismo que un módulo de app, pero cuando se compila, crea un archivo de código en lugar de un APK, por lo que no se puede instalar en un dispositivo.</a></li>
+      <li><a><strong>Módulo de Google Cloud</strong><br>Proporciona un contenedor para el código de backend de Google Cloud. Este módulo tiene el código y las dependencias requeridas para un backend de Java App Engine, Cloud Endpoints y Cloud
+          Messaging para conectarse a la aplicación.</a></li>
+    </ul>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/ent_tem4.png" alt="tema3.1" class="img-fluid">
+    </center>
 
-              <div class="display-1" id="bh">Introducción a Android Studio</div>
-              <hr>
-              <p>Es el entorno de desarrollo integrado oficial para el desarrollo de apps para Android, está basado en IntelliJ IDEA po lo que posee sus características y otras más, las cuales aumentan la productividad cuando se desarrolla apps, como por ejemplo:</p>
-              <ul>
-                  <li><a>Un sistema de compilación flexible basado en Gradle.</a></li>
-                  <li><a></a>Un emulador rápido y cargado de funciones.</li>
-                  <li><a></a>Un entorno unificado donde se puede desarrollar para todos los dispositivos Android.</li>
-                  <li><a></a>Aplicación de cambios para insertar cambios de códigos y recursos a la aplicación en ejecución sin reiniciar la aplicación.</li>
-                  <li><a></a>Variedad de marcos de trabajo y herramientas de prueba.</li>
-              </ul>
-		  <center>
-			  <img src="../img/Primer_parcial/img_entorno/ent_tem1.jpg" alt="Tema1" class="img-fluid">
-		  </center>
-              
-              <br> <br>
+    <br> <br>
 
-              <div class="display-1" id="bn">Estructura del proyecto</div>
-              <hr>
-              <p>Los proyectos incluyen uno o más módulos con archivos de código fuente y archivos de recursos, como pueden ser:</p>
-              <ul>
-                <li><a>Módulos de apps para Android</a></li>
-                <li><a>Módulos de biblioteca</a></li>
-                <li><a>Módulos de Google App Engine</a></li>
-              </ul>
-              <p>Android Studio muestra los archivos del proyecto en la vista de proyecto de Android. Esta vista está organizada en módulos para que se pueda acceder rápidamente a los archivos fuente del proyecto. Cada módulo de las aplicaciones contienen estas carpetas:</p>
-              <ul>
-                <li><a>manifests</a></li>
-                <li><a>java</a></li>
-                <li><a>res</a></li>
-              </ul>
-		  <center> 
-			  <img src="../img/Primer_parcial/img_entorno/ent_tem2.png" alt="tema2" class="img-fluid">
-		  </center>
-             
-              <br> <br>
+    <div class="display-1" id="bvh">Archivos de Proyecto</div>
+    <hr>
+    <p>De forma predeterminada, Android Studio muestra los archivos de tu proyecto en la vista Android. Esta vista no refleja la jerarquía real de los archivos en el disco, pero se organiza en módulos y tipos de archivos para simplificar la
+      navegación entre los principales archivos fuente de tu proyecto, con lo cual se ocultan determinados archivos o directorios que no se usan con frecuencia.</p>
+    <center>
+      <table width="1000" border="0">
+        <tr>
+          <td>
+            <p>Dentro de cada módulo de app para Android, los archivos se muestran en los siguientes grupos:</p>
+            <p><strong>Manifest</strong></p>
+            <p>Contiene el archivo AndroidManifest.xml.</p>
+            <p><strong>Java</strong></p>
+            <p>Contiene los archivos Java de código fuente separados por nombres de paquetes, incluido el código de prueba JUnit.</p>
+            <p><strong>res</strong></p>
+            <p>Contiene todos los recursos sin código, como diseños XML, strings de IU y también imágenes de mapa de bits, divididos en subdirectorios pertinentes.</p>
+          </td>
+          <td><img src="../img/Primer_parcial/img_entorno/img1.png" alt="Archivos de Proyecto" width="344" height="496" align="center"></td>
+        </tr>
+      </table>
+    </center>
+    <br>
+    <div class="display-1" id="vh">Vista de Proyectos de Android</div>
+    <hr>
+    <table width="1052" border="0" align="center">
+      <tr>
+        <td width="658" height="967">
+          <p>Para ver la estructura de archivos real del proyecto, incluidos todos los archivos ocultos de la vista de Android, selecciona Proyecto en el menú desplegable de la parte superior de la ventana Proyecto.</p>
+          <p>Cuando seleccionas la vista Proyecto, puedes ver más archivos y directorios. Los más importantes son los siguientes:</p>
+          <p><strong>module-name/</strong></p>
+          <blockquote>
+            <p><strong>build/ </strong>Contiene resultados de compilación.</p>
+            <p><strong>libs/ </strong>Contiene bibliotecas privadas.</p>
+            <p><strong>src/</strong> Contiene todos los archivos de código y recursos para el módulo en los siguientes subdirectorios:</p>
+            <blockquote>
+              <p><strong>androidTest/</strong> Contiene código para las pruebas de instrumentación que se ejecutan en un dispositivo Android. </p>
+              <p><strong>main/</strong> Contiene los archivos de conjunto de fuentes "principales": el código y los recursos de Android compartidos por todas las variantes de compilación </p>
+              <p><strong>AndroidManifest.xml</strong> Describe la naturaleza de la aplicación y cada uno de sus componentes.</p>
+              <p><strong>java/</strong> Contiene fuentes de código Java.</p>
+              <p><strong>res/</strong> Contiene recursos de aplicación, como archivos de elementos de diseño, archivos de diseño y strings de IU. </p>
+              <p>&nbsp;</p>
+            </blockquote>
+          </blockquote>
+        </td>
 
-              <div class="display-1" id="ve">Descripción general de proyectos</div>
-              <hr>
-              <p>Un proyecto en Android Studio contiene todo lo que define el trabajo para desarrollar una app, desde código fuente y recursos hasta código de prueba y configuraciones de compilación. Cuando se comienza un proyecto nuevo, Android Studio crea la estructura necesaria para todos los archivos y los hace visibles.</p>
-              <center>
-		  <img src="../img/Primer_parcial/img_entorno/ent_tem3.png" alt="tema3" class="img-fluid">
-		</center>
-              <br> <br>
-              
-              <div class="display-1" id="ve">Módulos</div>
-              <hr>
-              <p>Son un conjunto de archivos fuente y opciones de configuración de compilación que permiten dividir el proyecto en unidades de funcionalidad. El proyecto puede tener uno o más módulos y cada módulo se puede compilar, probar y depurar de forma independiente. Existen varios tipos de módulos, como los que se muestran a continuación:</p>
-              <ul>
-                <li><a><strong>Módulo de app para Android</strong><br>Proporciona un contenedor para el código fuente de la app, los archivos de recursos y las configuraciones.</a></li>
-                <li><a><strong>Módulo de funciones dinámicas</strong><br>Representa una función modularizada de la app que puede aprovechar Dynamic Delivery de Google Play.</a></li>
-                <li><a><strong>Módulo de biblioteca</strong><br>Proporciona un contenedor para el código reutilizable, que se puede usar como dependencia en otros módulos de aplicación o importar a otros proyectos. A nivel estructural, un módulo de biblioteca es lo mismo que un módulo de app, pero cuando se compila, crea un archivo de código en lugar de un APK, por lo que no se puede instalar en un dispositivo.</a></li>
-                <li><a><strong>Módulo de Google Cloud</strong><br>Proporciona un contenedor para el código de backend de Google Cloud. Este módulo tiene el código y las dependencias requeridas para un backend de Java App Engine, Cloud Endpoints y Cloud Messaging para conectarse a la aplicación.</a></li>
-              </ul>
-		  <center>
-			  <img src="../img/Primer_parcial/img_entorno/ent_tem4.png" alt="tema3.1" class="img-fluid">
-		  </center>
-              
-              <br> <br>
-            
-              <div class="display-1" id="bvh">Archivos de Proyecto</div>
-              <hr>
-              <p>De forma predeterminada, Android Studio muestra los archivos de tu proyecto en la vista Android. Esta vista no refleja la jerarquía real de los archivos en el disco, pero se organiza en módulos y tipos de archivos para simplificar la navegación entre los principales archivos fuente de tu proyecto, con lo cual se ocultan determinados archivos o directorios que no se usan con frecuencia.</p>
-               <center>
-                <table width="1000" border="0">
-                  <tr>
-                    <td><p>Dentro de cada módulo de app para Android, los archivos se muestran en los siguientes grupos:</p>
-                      <p><strong>Manifest</strong></p>
-                      <p>Contiene el archivo AndroidManifest.xml.</p>
-                      <p><strong>Java</strong></p>
-                      <p>Contiene los archivos Java de código fuente separados por nombres de paquetes, incluido el código de prueba JUnit.</p>
-                      <p><strong>res</strong></p>
-                    <p>Contiene todos los recursos sin código, como diseños XML, strings de IU y también imágenes de mapa de bits, divididos en subdirectorios pertinentes.</p></td>
-                    <td><img src="../img/Primer_parcial/img_entorno/img1.png" alt="Archivos de Proyecto" width="344" height="496" align="center"></td>
-                  </tr>
-                </table>
-            </center>
-		  <br>
-            <div class="display-1" id="vh">Vista de Proyectos de Android</div>
-  	     <hr>
-		  <table width="1052" border="0" align="center">
-                <tr>
-                  <td width="658" height="967"><p>Para ver la estructura de archivos real del proyecto, incluidos todos los archivos ocultos de la vista de Android, selecciona Proyecto en el menú desplegable de la parte superior de la ventana Proyecto.</p>
-                  	  <p>Cuando seleccionas la vista Proyecto, puedes ver más archivos y directorios. Los más importantes son los siguientes:</p>
-                  <p><strong>module-name/</strong></p>
-                  <blockquote>
-                    <p><strong>build/ </strong>Contiene resultados de compilación.</p>
-                    <p><strong>libs/ </strong>Contiene bibliotecas privadas.</p>
-                    <p><strong>src/</strong> Contiene todos los archivos de código y recursos para el módulo en los siguientes subdirectorios:</p>
-                    <blockquote>
-                      <p><strong>androidTest/</strong> Contiene código para las pruebas de instrumentación que se ejecutan en un dispositivo Android.                      </p>
-                      <p><strong>main/</strong> Contiene los archivos de conjunto de fuentes "principales": el código y los recursos de Android compartidos por todas las variantes de compilación </p>
-                      <p><strong>AndroidManifest.xml</strong> Describe la naturaleza de la aplicación y cada uno de sus componentes.</p>
-                      <p><strong>java/</strong> Contiene fuentes de código Java.</p>
-                      <p><strong>res/</strong> Contiene recursos de aplicación, como archivos de elementos de diseño, archivos de diseño y strings de IU. </p>
-                      <p>&nbsp;</p>
-                    </blockquote>
-                  </blockquote>                  </td>
+        <td width="384"><img src="../img/Primer_parcial/img_entorno/img2.png" width="369" class="img-fluid" height="833" alt="Vista de Proyectos de Android" align="center"></td>
+      </tr>
+    </table>
+    <br> <br>
 
-                  <td width="384"><img src="../img/Primer_parcial/img_entorno/img2.png" width="369" class="img-fluid" height="833" alt="Vista de Proyectos de Android" align="center"></td>
-                </tr>
-              </table>
-              <br> <br>
+    <div class="display-1" id="be">Configuración de la estructura de Proyecto</div>
+    <hr>
+    <p>Para cambiar diversas opciones de configuración en tu proyecto de Android Studio, abre el diálogo Estructura del proyecto haciendo clic en Archivo > Estructura del proyecto. Contiene las siguientes secciones:</p>
+    <p>
+      <center><img src="../img/Primer_parcial/img_entorno/img3.png" class="img-fluid" alt="Configuración de la estructura de Proyecto" height="518" width="945"> </center>
+    </p>
+    <p><strong>Ubicación del SDK</strong>: Configura la ubicación del JDK, SDK de Android y NDK de Android de tu proyecto.</p>
+    <p><strong>Proyecto</strong>: Fija la versión para Gradle y el complemento de Android para Gradle, y el nombre de la ubicación del repositorio.</p>
+    <p><strong>Módulos</strong>: Te permite editar opciones de configuración de compilación específicas del módulo, lo que incluye el SDK mínimo y de destino, la firma de la app y las dependencias de biblioteca.</p>
+    <p>La sección de configuración <em>Módulos</em> te permite cambiar las opciones para cada uno de los módulos de tu proyecto. </p>
+    <p><strong>Propiedades</strong>: Especifica las versiones del SDK y de las herramientas de compilación del módulo.</p>
+    <p><strong>Firma</strong>: Especifica el certificado que debe usarse para firmar tu APK.</p>
+    <p><strong>Tipos</strong>: Te permite crear varios <em>tipos</em>; cada tipo especifica un conjunto de ajustes de configuración, como la versión de SDK mínima y de destino del módulo, y el código y nombre de la versión.</p>
+    <p><strong>Dependencias</strong>: Ubica en una lista la biblioteca, el archivo y las dependencias para este módulo. Puedes agregar, modificar y borrar dependencias desde este subpanel. <br>
+      <br>
+    </p>
+    <div class="display-1" id="ccupo"> Cómo crear un proyecto </div>
+    <hr>
+    <p>Android Studio nos permite la creación de aplicaciones en Sistema Operativo Android para varios factores de forma como son los teléfonos, tablets, televisores y dispositivos Wear.</p>
 
-              <div class="display-1" id="be">Configuración de la estructura de Proyecto</div>
-              <hr>
-              <p>Para cambiar diversas opciones de configuración en tu proyecto de Android Studio, abre el diálogo Estructura del proyecto haciendo clic en Archivo > Estructura del proyecto. Contiene las siguientes secciones:</p>
-              <p><center><img src="../img/Primer_parcial/img_entorno/img3.png" class="img-fluid" alt="Configuración de la estructura de Proyecto" height="518" width="945">              </center></p>
-              <p><strong>Ubicación del SDK</strong>: Configura la ubicación del JDK, SDK de Android y NDK de Android de tu proyecto.</p>
-              <p><strong>Proyecto</strong>: Fija la versión para Gradle y el complemento de Android para Gradle, y el nombre de la ubicación del repositorio.</p>
-              <p><strong>Módulos</strong>: Te permite editar opciones de configuración de compilación específicas del módulo, lo que incluye el SDK mínimo y de destino, la firma de la app y las dependencias de biblioteca.</p>
-              <p>La sección de configuración <em>Módulos</em> te permite cambiar las opciones para cada uno de los módulos de tu proyecto. </p>
-              <p><strong>Propiedades</strong>: Especifica las versiones del SDK y de las herramientas de compilación del módulo.</p>
-              <p><strong>Firma</strong>: Especifica el certificado que debe usarse para firmar tu APK.</p>
-              <p><strong>Tipos</strong>: Te permite crear varios <em>tipos</em>; cada tipo especifica un conjunto de ajustes de configuración, como la versión de SDK mínima y de destino del módulo, y el código y nombre de la versión.</p>
-              <p><strong>Dependencias</strong>: Ubica en una lista la biblioteca, el archivo y las dependencias para este módulo. Puedes agregar, modificar y borrar dependencias desde este subpanel. <br>
-                <br>
-              </p>
-		<div class="display-1" id="ccupo"> Cómo crear un proyecto </div>
-		<hr>
-		<p>Android Studio nos permite la creación de aplicaciones en Sistema Operativo Android para varios factores de forma como son los teléfonos, tablets, televisores y dispositivos Wear.</p>
+    <p>Si no tenemos un proyecto abierto, Android Studio nos muestra una pantalla donde nos da la bienvenida y se procede a dar clic en <strong>Start a new Android Studio Project</strong> para crear un nuevo proyecto</p>
 
-		<p>Si no tenemos un proyecto abierto, Android Studio nos muestra una pantalla donde nos da la bienvenida y se procede a dar clic en <strong>Start a new Android Studio Project</strong> para crear un nuevo proyecto</p>
-		
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno1.png" class="img-fluid"><br>
-		</center>
-		<p>Si se tiene un proyecto abierto, para comenzar a crear  un nuevo proyecto selecciona <strong>File > New > New Project</strong> en la parte del menú principal</p>
-		<p>Una vez ingresado a <strong>New Project</strong> se nos desprende una pantalla donde nos permitirá elegir el tipo de proyecto que se desea crear y se completa con código y recursos para poder comenzar nuestro proyecto.</p>
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno2.png" width="1161" height="500" class="img-fluid"><br>
-		  </center>
-<div class="display-1" id="ceup"> Cómo elegir un proyecto </div>	
-		<hr>	
-		<p>El asistente <strong>Create New Project</strong> permite elegir el tipo de proyecto que se desea crear y se completa con código y recursos para comenzar</p>
-		<p>En la siguiente imagen se puede mostrar un proyecto de actividad básica en Android para un teléfono o una tablet</p>
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno3.png" class="img-fluid"><br>
-		  </center>  
-		<p>Después de seleccionar el tipo de proyecto que se desea crear, Android Studio incluye el código de muestra y recursos dicho anteriormente y presentados a continuación</p>
-<div class="display-1" id="ccup"> Cómo configurar un proyecto </div>
-		<hr>
-		<p>Para configurar los ajustes de nuestro proyecto, tal y como se muestra en la imagen, donde encontramos el nombre de nuestra aplicación o <strong>Name</strong>, <strong>Package Name</strong> que es el nombre del paquete o ID de aplicación, <strong>Save</strong> Location donde se guardara nuestro proyecto en la ruta local, el <strong>lenguage</strong> o  lenguaje a programar donde se escogerá Java  y un nivel de API o <strong>Minimum API level</strong> donde es recomendable trabajar desde un nivel inferior ya que en la actualidad existen personas que aún tienen su Smartphone antiguo y al trabajar con una API inferior permitirá tener acceso desde ese modelo de API en adelante.</p>
-		<p>Si el tipo de proyecto que se seleccionó admite experiencias instantáneas a través de Google Play Instant y se desea habilitarlo para la app, se marca la casilla junto a <strong>This project will support instant apps.</strong></p>
-		<p>Finalmente si en el proyecto se necesita usar las bibliotecas de AndroidX de manera predeterminada, que son reemplazos mejorados de las bibliotecas de compatibilidad de Android, se  marca la casilla junto a <strong>Use AndroidX artifacts.</strong></p>
-		<p>Android Studio una vez creado nuestro proyecto podemos observar el código y los recursos básicos para comenzar con la programación de nuestra app.</p>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno1.png" class="img-fluid"><br>
+    </center>
+    <p>Si se tiene un proyecto abierto, para comenzar a crear un nuevo proyecto selecciona <strong>File > New > New Project</strong> en la parte del menú principal</p>
+    <p>Una vez ingresado a <strong>New Project</strong> se nos desprende una pantalla donde nos permitirá elegir el tipo de proyecto que se desea crear y se completa con código y recursos para poder comenzar nuestro proyecto.</p>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno2.png" width="1161" height="500" class="img-fluid"><br>
+    </center>
+    <div class="display-1" id="ceup"> Cómo elegir un proyecto </div>
+    <hr>
+    <p>El asistente <strong>Create New Project</strong> permite elegir el tipo de proyecto que se desea crear y se completa con código y recursos para comenzar</p>
+    <p>En la siguiente imagen se puede mostrar un proyecto de actividad básica en Android para un teléfono o una tablet</p>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno3.png" class="img-fluid"><br>
+    </center>
+    <p>Después de seleccionar el tipo de proyecto que se desea crear, Android Studio incluye el código de muestra y recursos dicho anteriormente y presentados a continuación</p>
+    <div class="display-1" id="ccup"> Cómo configurar un proyecto </div>
+    <hr>
+    <p>Para configurar los ajustes de nuestro proyecto, tal y como se muestra en la imagen, donde encontramos el nombre de nuestra aplicación o <strong>Name</strong>, <strong>Package Name</strong> que es el nombre del paquete o ID de aplicación,
+      <strong>Save</strong> Location donde se guardara nuestro proyecto en la ruta local, el <strong>lenguage</strong> o lenguaje a programar donde se escogerá Java y un nivel de API o <strong>Minimum API level</strong> donde es recomendable trabajar
+      desde un nivel inferior ya que en la actualidad existen personas que aún tienen su Smartphone antiguo y al trabajar con una API inferior permitirá tener acceso desde ese modelo de API en adelante.</p>
+    <p>Si el tipo de proyecto que se seleccionó admite experiencias instantáneas a través de Google Play Instant y se desea habilitarlo para la app, se marca la casilla junto a <strong>This project will support instant apps.</strong></p>
+    <p>Finalmente si en el proyecto se necesita usar las bibliotecas de AndroidX de manera predeterminada, que son reemplazos mejorados de las bibliotecas de compatibilidad de Android, se marca la casilla junto a <strong>Use AndroidX
+        artifacts.</strong></p>
+    <p>Android Studio una vez creado nuestro proyecto podemos observar el código y los recursos básicos para comenzar con la programación de nuestra app.</p>
 
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno4.png" class="img-fluid"><br>
-		
-			<img src="../img/Primer_parcial/img_entorno/Entorno5.png" width="1136" height="500" class="img-fluid"><br>
-		  </center>
-<div class="display-1" id="ciupe"> Cómo importar un proyecto existente</div>
-		<hr>
-		<p>Para importar un proyecto existente en Android Studio, sigue estos pasos:</p>
-		<ul>
-			<li type="square">Haz clic en File > New > Import Project.</li>
-			<li type="square">En la ventana que aparece, ve hasta el directorio raíz del proyecto que deseas importar.</li>
-			<li type="square">Haz clic en OK.</li>
-		</ul>
-		<p>Finalmente Android Studio abre el proyecto en una nueva ventana de IDE e indexa el contenido del proyecto.</p>
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno6.png" width="1160" height="500" class="img-fluid"><br>
-		
-		  <img src="../img/Primer_parcial/img_entorno/Entorno7.png"><br>
-		  </center>
-		<p>Si se importa un proyecto desde el control de versión, se usa el menú <strong>File > New > Project from Version Control.</strong></p>
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno8.png" width="1160" height="500" class="img-fluid"><br>
-		  </center>
-<div class="display-1" id="cbdfdt"> Conceptos básicos del flujo de trabajo para desarrolladores</div>
-		<hr>
-		<p>El flujo de trabajo de desarrollo de una app para Android es conceptualmente el mismo que el de otras plataformas de apps. Sin embargo, compilar de manera eficiente una app para Android bien diseñada requiere algunas herramientas especializadas. En la siguiente lista, se proporciona una descripción general del proceso de compilación de una app para Android y se incluyen vínculos a algunas herramientas de Android Studio que deberías usar en cada fase del desarrollo.</p>
-		<ul>
-			<li type="circle"><strong>Configura tu espacio de trabajo</strong><br>Fase principal donde se basa en la instalación de nuestro software que es Android Studio y posteriormente crear un proyecto. </li>
-			<li type="circle"><strong>Escribe tu app</strong><br>Android Studio ofrece una variedad de herramientas que ayudan a agilitar el trabajo, escribir un código de calidad y diseñar una interfaz de usuario con los recursos necesarios para todo tipo de dispositivos android</li>
-			<li type="circle"><strong>Compila y ejecuta tu app</strong><br>En esta fase de compilar el proyecto, se compilará en un paquete APK depurable que se puede instalar y ejecutar en el emulador o en un dispositivo que ejecute Android</li>
-			<li type="circle"><strong>Depura, genera perfiles y realiza pruebas</strong><br>En esta fase iterativa se continúa escribiendo la aplicación, con mayor énfasis en la solución de errores y optimización del rendimiento, donde las pruebas ayudaran con eso</li>
-			<li type="circle"><strong>Publica tu app</strong><br>Una vez finalizado, se controla la versión y la firma con clave para la publicación de la aplicación realizada</li>
-		</ul>	
-		<center>
-			<img src="../img/Primer_parcial/img_entorno/Entorno9.png" class="img-fluid"><br>
-		  </center>
-          </section>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno4.png" class="img-fluid"><br>
+
+      <img src="../img/Primer_parcial/img_entorno/Entorno5.png" width="1136" height="500" class="img-fluid"><br>
+    </center>
+    <div class="display-1" id="ciupe"> Cómo importar un proyecto existente</div>
+    <hr>
+    <p>Para importar un proyecto existente en Android Studio, sigue estos pasos:</p>
+    <ul>
+      <li type="square">Haz clic en File > New > Import Project.</li>
+      <li type="square">En la ventana que aparece, ve hasta el directorio raíz del proyecto que deseas importar.</li>
+      <li type="square">Haz clic en OK.</li>
+    </ul>
+    <p>Finalmente Android Studio abre el proyecto en una nueva ventana de IDE e indexa el contenido del proyecto.</p>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno6.png" width="1160" height="500" class="img-fluid"><br>
+
+      <img src="../img/Primer_parcial/img_entorno/Entorno7.png"><br>
+    </center>
+    <p>Si se importa un proyecto desde el control de versión, se usa el menú <strong>File > New > Project from Version Control.</strong></p>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno8.png" width="1160" height="500" class="img-fluid"><br>
+    </center>
+    <div class="display-1" id="cbdfdt"> Conceptos básicos del flujo de trabajo para desarrolladores</div>
+    <hr>
+    <p>El flujo de trabajo de desarrollo de una app para Android es conceptualmente el mismo que el de otras plataformas de apps. Sin embargo, compilar de manera eficiente una app para Android bien diseñada requiere algunas herramientas
+      especializadas. En la siguiente lista, se proporciona una descripción general del proceso de compilación de una app para Android y se incluyen vínculos a algunas herramientas de Android Studio que deberías usar en cada fase del desarrollo.</p>
+    <ul>
+      <li type="circle"><strong>Configura tu espacio de trabajo</strong><br>Fase principal donde se basa en la instalación de nuestro software que es Android Studio y posteriormente crear un proyecto. </li>
+      <li type="circle"><strong>Escribe tu app</strong><br>Android Studio ofrece una variedad de herramientas que ayudan a agilitar el trabajo, escribir un código de calidad y diseñar una interfaz de usuario con los recursos necesarios para todo tipo
+        de dispositivos android</li>
+      <li type="circle"><strong>Compila y ejecuta tu app</strong><br>En esta fase de compilar el proyecto, se compilará en un paquete APK depurable que se puede instalar y ejecutar en el emulador o en un dispositivo que ejecute Android</li>
+      <li type="circle"><strong>Depura, genera perfiles y realiza pruebas</strong><br>En esta fase iterativa se continúa escribiendo la aplicación, con mayor énfasis en la solución de errores y optimización del rendimiento, donde las pruebas ayudaran
+        con eso</li>
+      <li type="circle"><strong>Publica tu app</strong><br>Una vez finalizado, se controla la versión y la firma con clave para la publicación de la aplicación realizada</li>
+    </ul>
+    <center>
+      <img src="../img/Primer_parcial/img_entorno/Entorno9.png" class="img-fluid"><br>
+    </center>
+  </section>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
 </html>
