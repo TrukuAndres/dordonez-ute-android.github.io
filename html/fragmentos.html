@@ -80,37 +80,42 @@
     <div class="display-4">FRAGMENTOS</div>
     <hr>
     <ul>
-      <li><a href="#bh">Subtema 1</a></li>
-      <li><a href="#bn">Subtema 2</a></li>
-      <li><a href="#ve">Subtema 3</a></li>
+      <li><a href="#bh">¿Qué es un fragmento?</a></li>
+      <li><a href="#bn">Cómo crear una clase Fragment</a></li>
+      <li><a href="#ve">Cómo agregar un fragmento a una actividad con XML</a></li>
       <li><a href="#bvh">Subtema 4</a></li>
       <li><a href="#vh">Subtema 5</a></li>
       <li><a href="#be">Subtema 6</a></li>
-      <li><a href="#beh">Subtema 7</a></li>
+      
     </ul>
     <br> <br>
 
-    <div class="display-1" id="bh">Subtema 1</div>
+    <div class="display-1" id="bh">¿Qué es un fragmento?</div>
     <hr>
-    <p></p>
+    <p>Un fragmento es una sección modular de una actividad que tiene su ciclo de vida propio,recibe sus propios eventos de entrada
+ y se puede agregar o quitar mientras la actividad se esté ejecutando, algo así como una subactividad.</p>
     <center>
-      <img src="../img/Primer_parcial.PNG" class="img-fluid"><br><br>
+      <img src="../img/Segundo_parcial/Fragmentos/fr1.png" class="img-fluid"><br><br>
     </center>
     <br> <br>
 
-    <div class="display-1" id="bn">Subtema 2</div>
+    <div class="display-1" id="bn">Cómo crear una clase Fragment</div>
     <hr>
-    <p></p>
+    <p>Para crear un fragmento se extiende la clase Fragment y luego se reemplaza los métodos clave de ciclo de vida para insertar la lógica de la app, 
+     tal como se haría con una clase Activity.
+
+     Una diferencia al crear una clase Fragment es que se debe usar la devolución de llamada onCreateView() para definir el diseño.</p>
     <center>
-      <img src="../img/Primer_parcial.PNG" class="img-fluid"><br><br>
+      <img src="../img/Segundo_parcial/Fragmentos/fr2.png" class="img-fluid"><br><br>
     </center>
     <br><br>
 
-    <div class="display-1" id="ve">Subtema 3</div>
+    <div class="display-1" id="ve">Cómo agregar un fragmento a una actividad con XML</div>
     <hr>
-    <p></p>
+    <p>Cada instancia de una clase Fragment debe asociarse con una clase FragmentActivity superior.Se puede realizar esta asociación mediante la definición de cada fragmento 
+en el archivo XML de diseño de tu actividad.(res/layout-large/news_articles.xml).</p>
     <center>
-      <img src="../img/Primer_parcial.PNG" class="img-fluid"><br><br>
+      <img src="../img/Segundo_parcial/Fragmentos/fr3.png" class="img-fluid"><br><br>
     </center>
     <br> <br>
 
@@ -138,13 +143,7 @@
     </center>
     <br> <br>
 
-    <div class="display-1" id="beh">Subtema 7</div>
-    <hr>
-    <p></p>
-    <center>
-      <img src="../img/Primer_parcial.PNG" class="img-fluid"><br><br>
-    </center>
-    <br><br>
+
 
   </section>
   <!-- Optional JavaScript -->
